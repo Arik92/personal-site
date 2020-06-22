@@ -1,0 +1,16 @@
+<div class="navbar-container">
+    <div class="index"><h1>
+        <a routerLink="/">Arik Aviv</a>
+    </h1></div>
+    <div class="navigation">
+        <div class="desktop-nav">
+            <ul>                
+                <ng-template ngFor let-item [ngForOf]="pages" let-i="index">
+                <li><h3><a routerLink="{{pages[i].route}}">{{pages[i].title}}</a></h3></li>
+                <li *ngIf="isDivider(i)" class="divider">&nbsp;</li>
+                </ng-template>                
+            </ul>
+        </div>
+        <div class="burger-nav"></div>
+    </div>
+</div>

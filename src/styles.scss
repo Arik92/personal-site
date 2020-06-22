@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+/** Global styles 
+Color pallette: 
+    Base/white: #eeeeee
+    Blue/hover color: #32e0c4
+    Light black: #393e46
+    Darker tone: #222831
+    Optional gray : #646464
+    Origin: https://colorhunt.co/palette/189745
+*/
+body {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+
+    a {
+        text-decoration: none;
+        color:inherit;
+        letter-spacing: 0.25em;
+        transition-duration: 0.5s;
+    }
+    a:hover {
+        color: #32e0c4;
+    }
+    .page-container {
+        position: absolute;
+        height: 80%;
+        width: 80%;
+        top: 10%;
+        left: 10%;
+        display: flex;
+    }
+}
