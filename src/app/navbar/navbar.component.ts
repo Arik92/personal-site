@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var particlesJS: any;
 interface navItem {
   title: string,
   route: string
@@ -35,9 +36,12 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    particlesJS.load('navbar-particles', 'assets/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });    
   }
 
-  isDivider(index):boolean {
+  isDivider(index:number):boolean {
     return index !== (this.pages.length - 1)
   }
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var particlesJS: any;
 
 @Component({
   selector: 'app-projects',
@@ -10,6 +11,9 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    particlesJS.load('project-particles', 'assets/particles.json', function() {
+      console.log('callback - project particles config loaded');
+    });   
   }
 
 }
