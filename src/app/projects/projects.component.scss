@@ -1,0 +1,18 @@
+#project-particles {
+    z-index:2
+}
+.projects-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: #393e46;
+    opacity: 0.8;
+    .content {
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        top: 5%;
+    }
+}
+

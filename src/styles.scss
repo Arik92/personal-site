@@ -14,6 +14,14 @@ body {
     width: 100%;
     font-family: 'Source Code Pro', monospace;
 
+    .particles {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #222831;
+        z-index: 0;
+    }
+
     a {
         text-decoration: none;
         color:inherit;
@@ -24,11 +32,12 @@ body {
         color: #32e0c4;
     }
     .page-container {
+        color: #eeeeee;
         position: absolute;
-        height: 80%;
-        width: 80%;
-        top: 10%;
-        left: 10%;
+        height: 94%;
+        width: 96%;
+        top: 3%;
+        left: 2%;
         display: flex;
     }
 }
