@@ -13,9 +13,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { RTLDivDirective } from './rtldiv.directive';
 
 export function createTranslateLoader(http: HttpClient) {
-    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+    return new TranslateHttpLoader(http);
 }
 
 @NgModule({
@@ -25,14 +26,16 @@ export function createTranslateLoader(http: HttpClient) {
     SidebarComponent,
     ProjectsComponent,
     AboutComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    RTLDivDirective
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
       provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
+      useFactory: createTranslateLoader,
       deps: [HttpClient]
     }
   }),

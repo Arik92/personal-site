@@ -8,7 +8,7 @@
     "build": "npm run i18n:generate && ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "i18n:generate": "i18n src/i18n/i18n.pipe src/i18n",
+    "i18n:generate": "i18n src/assets/i18n/i18n.pipe src/assets/i18n",
     "postinstall": "ng build --aot --prod --output-hashing none",
     "e2e": "ng e2e"
   },
