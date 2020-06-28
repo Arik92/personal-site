@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { TranslatorService } from '../translator.service';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translate: TranslatorService) { }
 
   ngOnInit(): void {
+  }
+
+  changeLang(lng:string) {
+    this.translate.changeLanguage(lng);
   }
 
 }

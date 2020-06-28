@@ -8,6 +8,8 @@ export class RTLDivDirective {
   setDirection(element, isRTL): void {
     if (isRTL) {
       element.nativeElement.classList.add('rtl');
+    } else {
+      element.nativeElement.classList.remove('rtl');
     }
   }
 
@@ -15,10 +17,10 @@ export class RTLDivDirective {
     private translator: TranslatorService,
     el: ElementRef
   ) {
-      this.isRTL = translator.isRTL();
+      this.isRTL = this.translator.isRTL();
       this.setDirection(el, this.isRTL);
-      // this.translator.translate.onLangChange.subscribe((event: LangChangeEvent) => {
-      //   this.setDirection(el, translator.isRTL());
-      // });
+      this.translator.langChange$.subscribe((event) => {
+        this.setDirection(el, this.translator.isRTL());
+      });
     }
 }

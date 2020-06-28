@@ -1,21 +1,21 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TranslatorService {
-
+  
+  langChange$: Observable<any>;
   constructor(private translate: TranslateService) { }
   // translation service example
 
   async init(lang) {
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
-    this.translate.getDefaultLang();
-    // this.translate.onLangChange.subscribe(newLang => {
-    //   console.log('language change hook ', newLang);
-    // })
+    this.translate.getDefaultLang();    
+    this.langChange$ = this.translate.onLangChange;
   }
 
   changeLanguage(lang) {

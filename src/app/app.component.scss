@@ -1,3 +1,18 @@
+.app-container {
+    position: absolute;
+    height:100%;
+    width:100%;
+}
+.sidebar-section {
+    position: absolute;
+    left: 0;
+    top: 9%;
+    height: 91%;
+    width: 29%;    
+    .rtl {
+        color:red;
+    }
+}
 .router-section {
     position: absolute;
     width: 71%;
@@ -11,5 +26,18 @@
         background-color: white;
         height: 100%;
         width: 98.6%;
+    }
+}
+.rtl {
+    .sidebar-section {
+        right: 0;
+    }
+    .router-section {
+        left: 0;
+        right: 29%;
+    }
+    .router-container {
+        left: 0;
+        right: 1.4%
     }
 }

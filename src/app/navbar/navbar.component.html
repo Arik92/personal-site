@@ -1,26 +1,26 @@
-<div class="navbar-container">
-    <div class="index">
+<div class="navbar-container" rtlDiv>
+    <div class="index" rtlDiv>
         <div id="navbar-particles" class="particles">            
         </div>
         <h1>
-            <a routerLink="/">Arik Aviv</a>
+            <a routerLink="/">{{ 'NAVBAR.PERSONAL_NAME' | translate }}</a>
         </h1>
-</div>
-    <div class="navigation">
-        <div class="desktop-nav">
+    </div>
+    <div class="navigation" rtlDiv>
+        <div class="desktop-nav" rtlDiv>
             <ul>                
-                <ng-template ngFor let-item [ngForOf]="pages" let-i="index">
-                <li><h3><a routerLink="{{pages[i].route}}">{{pages[i].title}}</a></h3></li>
+                <ng-template ngFor let-item [ngForOf]="navPages" let-i="index">
+                <li><h3><a routerLink="{{navPages[i].route}}">{{navPages[i].title}}</a></h3></li>
                 <li *ngIf="isDivider(i)" class="divider">&nbsp;</li>
                 </ng-template>                
-                <li class="language-container">
+                <!-- <li class="language-container">
                     <h4 class="language-header">Language:</h4>
                     <div class="language-selector">
                     <h4>En</h4>
                     <h4>He</h4>
                     </div>
                     
-                </li>
+                </li> -->
             </ul>
         </div>
         <div class="burger-nav"></div>

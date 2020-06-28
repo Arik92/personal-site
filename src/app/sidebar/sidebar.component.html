@@ -1,13 +1,19 @@
 <div class="sidebar-container">
-    <div class="img">
+    <div class="top-section">
         <!-- <img src="" alt=""> image be here-->
-        <img src="assets/arik-7-min.jpg" alt="">
+        <div class="language-select">
+            <h4 class="lng-btn"><a (click)="changeLang('en')">En</a></h4>
+            <div>&nbsp;</div>
+            <h4 class="lng-btn"><a (click)="changeLang('iw')">He</a></h4>
+        </div>
+        <div class="img-container">
+            <img src="assets/arik-7-min.jpg" alt="">
+        </div>
     </div>
     <div class="middle container">
-        <div class="intro">
-            <h2>Arik Aviv</h2>
-            <!-- <span>Hey what's up, My name is Arik and I have created this site</span> -->
-            <span>I is {{ 'SIDEBAR.SELF_DESCRIPTION' | translate }}</span>
+        <div class="intro" rtlDiv>
+            <h2>{{ 'SIDEBAR.SELF_NAME' | translate }}</h2>
+            <span>{{ 'SIDEBAR.SELF_DESCRIPTION' | translate }}</span>
         </div>       
     </div>
     

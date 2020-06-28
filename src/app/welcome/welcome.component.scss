@@ -1,11 +1,16 @@
 .welcome-container {  
     position: absolute;
     color: #eeeeee;
-    height: 5%;
-    width: 10%;
+    height: 10%;
+    width: 13%;
     left: 45%;
     top: 40%;
     .welcome-msg {
         position: absolute;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        direction: ltr;
+        user-select: none;
     }
 }

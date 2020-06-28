@@ -1,12 +1,14 @@
-  <div class="navbar-section">
-    <app-navbar></app-navbar>    
-  </div>
-  <div class="sidebar-section">
-<app-sidebar></app-sidebar>
-  </div>
-  <div class="router-section">
-    <div class="router-container">
-      <div id="app-particles" class="particles"></div>
-      <router-outlet></router-outlet>
+  <div class="app-container" rtlDiv>
+    <div class="navbar-section">
+      <app-navbar></app-navbar>    
+    </div>
+    <div class="sidebar-section" rtlDiv>
+  <app-sidebar></app-sidebar>
+    </div>
+    <div class="router-section" rtlDiv>
+      <div class="router-container" rtlDiv>
+        <div id="app-particles" class="particles"></div>
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
