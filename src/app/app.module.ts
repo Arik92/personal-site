@@ -8,6 +8,16 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+// app.module.ts
+// import { RTLDivDirective } from './directives/rtl-div.directive';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { RTLDivDirective } from './rtldiv.directive';
+
+export function createTranslateLoader(http: HttpClient) {
+    return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -16,10 +26,19 @@ import { WelcomeComponent } from './welcome/welcome.component';
     SidebarComponent,
     ProjectsComponent,
     AboutComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    RTLDivDirective
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+      provide: TranslateLoader,
+      useFactory: createTranslateLoader,
+      deps: [HttpClient]
+    }
+  }),
     AppRoutingModule
   ],
   providers: [],

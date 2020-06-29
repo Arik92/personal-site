@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslatorService } from '../translator.service';
 declare var particlesJS: any;
 interface navItem {
+  key: string, //translation file key
   title: string,
   route: string
 }
@@ -11,38 +13,49 @@ interface navItem {
 })
 
 export class NavbarComponent implements OnInit {
-  
-  pages: navItem[]=[{
-    title: 'Projects',
+  navPages: navItem[]=[{
+    key: 'PROJECTS',
+    title: '',
     route: 'projects'
   },
   {
-    title: 'Pixel Art',
+    key: 'PIXEL_ART',
+    title: '',
     route: '/'
   },
   {
-    title: 'Games',
+    key: 'GAMES',
+    title: '',
     route: '/'
   },
   {
-    title: 'About',
+    key: 'ABOUT',
+    title: '',
     route: 'about'
   },
   {
-    title: 'Contact',
+    key: 'CONTACT',
+    title: '',
     route: '/'
   }]; 
 
-  constructor() { }
+  constructor(private translator:TranslatorService) {
+    this.translator.langChange$.subscribe(languageObj => {
+      const translationObj = languageObj.translations;
+      this.navPages.map(navItem => {
+        navItem.title = translationObj.NAVBAR[navItem.key];
+      });
+    });
+
+   }
 
   ngOnInit(): void {
     particlesJS.load('navbar-particles', 'assets/particles.json', function() {
-      console.log('callback - particles.js config loaded');
+      // console.log('callback - particles.js config loaded');      
     });    
   }
 
   isDivider(index:number):boolean {
-    return index !== (this.pages.length - 1)
+    return index !== (this.navPages.length - 1)
   }
-
 }

@@ -1,0 +1,18 @@
+i18n=> | en | iw
+
+=>NAVBAR
+PERSONAL_NAME | Arik Aviv | אריק אביב
+PROJECTS | Projects | פרויקטים
+PIXEL_ART | Pixel Art | יצירות פיקסלים
+GAMES | Games | פיתוח משחקים
+ABOUT | About | אודות
+CONTACT | Contact | צרו קשר
+<=
+
+=>WELCOME
+WELCOME_MESSAGE | Welcome! | !ברוכים הבאים
+<=
+=>SIDEBAR
+SELF_NAME | Arik Aviv | אריק אביב
+SELF_DESCRIPTION | Hey what's up, My name is Arik and I have created this site | היי, אני אריק ואני היוצר של האתר שאתם מסתובבים בו
+<=
