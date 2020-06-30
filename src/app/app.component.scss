@@ -6,26 +6,32 @@
 .sidebar-section {
     position: absolute;
     left: 0;
-    top: 9%;
-    height: 91%;
-    width: 29%;    
+    // top: 9%;
+    // height: 91%;
+    // width: 29%;    old default dimensions
+    height: 51%;
+    top: 49%;
+    width:100%;    
     .rtl {
         color:red;
     }
 }
 .router-section {
     position: absolute;
-    width: 71%;
-    height: 91%;
+    // left: 29%;
+    // width: 71%;
+    // height: 91%; //old default dimenstions
+    height: 40%;
+    width: 100%;
+    left: 0;
     top: 9%;
-    left: 29%;
     background-color:rgba(160,160,160,0.3);
     .router-container {
         position: absolute;
-        left: 1.4%;
+        // left: 1.4%;
         background-color: white;
         height: 100%;
-        width: 98.6%;
+        width: 100%;
     }
 }
 .rtl {
@@ -40,4 +46,22 @@
         left: 0;
         right: 1.4%
     }
+}
+@media only screen and (min-width: 1100px) {
+    .sidebar-section {
+        width: 29%;
+        height: 91%;
+        top: 9%;
+    }
+    .router-section {
+        height: 91%;
+        width: 70%;
+        left: 29%;
+        .router-container {
+            left: 1.4%;
+            // width: 98.6%;
+            width:100%;
+        }
+    }
+
 }

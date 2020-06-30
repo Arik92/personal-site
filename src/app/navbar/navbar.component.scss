@@ -36,12 +36,13 @@
     .navigation {        
         position:absolute;
         height:100%;
-        width:70%;
-        left:30%;            
+        width:50%;
+        left:50%;            
         .desktop-nav {
             height:100%;
             width:100%;
-            display:flex;            
+            display: none;
+            // display: flex;
             align-items:center;
             ul {
                 list-style: none;
@@ -67,7 +68,12 @@
             }
         }
         .burger-nav {
-            display: none;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: flex-end;
+            height:100%;
+            width:95%;
         }                
     }    
 }
@@ -76,4 +82,36 @@
          left:0;
          right: 30%;
     }
+}
+@media only screen and (min-width: 1100px) {    
+      
+    // .navbar-container .index {
+    //         width:30%;
+    //     }
+    //     .navbar-container .navigation {
+    //         width: 70%;
+    //         left: 30%;
+    //     }      
+    //     .navbar-container .burger-nav {
+    //         display: none;
+    //     }
+    //     .navbar-container .desktop-nav {
+    //         display:flex;  
+    //     }
+
+    .index {
+        width:30%;
+    }
+    .navigation {
+        width: 70%;
+        left: 30%;
+    }       
+
+    .burger-nav {
+        display: none;
+    }
+    .desktop-nav {
+        display:flex !important;  //consider taking down and finding out why initial none takes priority
+    }
+    
 }
