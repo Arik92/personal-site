@@ -8,14 +8,16 @@ import { TranslateService } from '@ngx-translate/core';
 export class TranslatorService {
   
   langChange$: Observable<any>;
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService) {
+    this.langChange$ = this.translate.onLangChange;
+   }
+  
   // translation service example
 
   async init(lang) {
     this.translate.setDefaultLang(lang);
     this.translate.use(lang);
     this.translate.getDefaultLang();    
-    this.langChange$ = this.translate.onLangChange;
   }
 
   changeLanguage(lang) {
