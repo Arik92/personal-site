@@ -46,7 +46,6 @@ export class NavbarComponent implements OnInit {
         navItem.title = translationObj.NAVBAR[navItem.key];
       });
     });
-
    }
 
   ngOnInit(): void {
@@ -57,5 +56,8 @@ export class NavbarComponent implements OnInit {
 
   isDivider(index:number):boolean {
     return index !== (this.navPages.length - 1)
+  }
+  toggleBurger() {
+    console.log('burger trigger');
   }
 }
