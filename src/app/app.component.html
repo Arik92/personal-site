@@ -1,4 +1,7 @@
   <div class="app-container" rtlDiv>
+    <div class="drawer-section" [ngClass]="(isOpen)?'open':'close'" rtlDiv>
+      <app-drawer></app-drawer>
+    </div>
     <div class="navbar-section">
       <app-navbar></app-navbar>    
     </div>

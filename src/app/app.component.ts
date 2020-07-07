@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TranslatorService } from './translator.service';
 import { NavigationService } from './navigation.service';
 declare var particlesJS: any;
@@ -9,14 +9,16 @@ declare var particlesJS: any;
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {  
+export class AppComponent implements OnInit, OnDestroy {  
   currentLanguage: string = 'en';
+  isOpen: boolean = false;
+
   constructor(private translator: TranslatorService, private navigation: NavigationService) {
     // Optional: get currentLanguage from localstorage
     this.translator.init(this.currentLanguage).then(res => {
       //translate service initiated
       this.navigation.drawerToggle.subscribe(newDrawerState => {
-        console.log('new drawer state val? ', newDrawerState);
+        this.isOpen = newDrawerState;
       })
     });  
   }
@@ -26,4 +28,7 @@ export class AppComponent implements OnInit {
       console.log('callback - app particles config loaded');
     });          
   }  
+  ngOnDestroy() {
+    this.navigation.drawerToggle.unsubscribe();
+  }
 }

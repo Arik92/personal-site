@@ -1,8 +1,23 @@
+.open {
+    display: flex;
+}
+.close {
+    display: none;
+}
 .app-container {
     position: absolute;
     height:100%;
     width:100%;
     // overflow:hidden; // if scrolling somehow persists
+}
+.drawer-section {
+    position:absolute;
+    height: 100%;
+    background-color: #222831;
+    color: #eeeeee;
+    width: 50%;
+    right: 0;
+    z-index:5;
 }
 .sidebar-section {
     position: absolute;
