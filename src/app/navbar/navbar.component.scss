@@ -82,6 +82,7 @@
     h3 {
         position: absolute;
         right: 35px;
+        left: unset;
         margin: 0;
         svg {
             padding-top:5px;
@@ -92,7 +93,16 @@
 .rtl {
     .navigation{
          left:0;
-         right: 30%;
+         right: 50%;
+    }
+    .index {
+        right:0;
+    }
+    .burger-nav {
+        h3 {
+            right: unset;
+            left: 35px;
+        }
     }
 }
 @media only screen and (min-width: 1100px) {    
