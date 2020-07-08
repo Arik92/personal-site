@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 import { TranslatorService } from './translator.service';
 
 export interface navItem {
-  key: string, //translation file key
+  key: string, // translation file key
   title: string,
   route: string
 }
