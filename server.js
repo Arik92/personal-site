@@ -1,4 +1,5 @@
 let express = require('express');
+let compression = require('compression');
 let app = express();
 
 // let mongoose = require('mongoose');
@@ -24,6 +25,18 @@ let app = express();
 
 // app.use(express.static('public'));
 // app.use(express.static(__dirname + '/public/login'));
+// var options = {
+//   // dotfiles: 'ignore',
+//   // etag: false,
+//   // extensions: ['htm', 'html'],
+//   // index: false,
+//   // maxAge: '1d',
+//   // redirect: false,
+//   setHeaders: function (res, path, stat) {
+//     res.set('Content-Encoding', 'br, defalte, gzip');
+//   }
+// }
+app.use(compression());
 app.use(express.static(__dirname + '/dist/personal-site'));
 // app.use(express.static('node_modules'));
 // app.use(bodyParser.json());
