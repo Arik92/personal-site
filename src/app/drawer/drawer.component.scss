@@ -1,0 +1,38 @@
+.drawer-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #393e46;
+    }
+
+svg:hover {
+    fill: #32e0c4;
+}
+
+.navigation {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    .close-link {
+        background-color: #ffffff;
+        color: black;
+    }
+    ul {
+        height:90%;
+        width:100%;
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content: center;
+        list-style: none;
+        padding: 0;        
+        margin: 0;
+        li {
+            height: 11%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
