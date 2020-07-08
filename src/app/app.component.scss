@@ -8,7 +8,7 @@
     position: absolute;
     height:100%;
     width:100%;
-    // overflow:hidden; // if scrolling somehow persists
+    overflow:hidden; 
 }
 .drawer-section {
     position:absolute;
@@ -80,5 +80,4 @@
             width:100%;
         }
     }
-
 }

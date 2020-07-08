@@ -57,15 +57,16 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        .intro {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            user-select: none;
-            
-        }
-        
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        h2 {
+            margin: 0;
+        }            
     }
     
     .bottom {
@@ -102,4 +103,11 @@
             }            
         }
     }    
+}
+@media only screen and (min-width: 1100px) {
+    .middle .intro {
+        h2 {
+            margin: 20px;
+        }
+    }
 }
