@@ -1,3 +1,4 @@
+
 .sidebar-container {    
     position: absolute;
     height: 100%;
@@ -40,14 +41,21 @@
         }
         img {
             position: absolute;
-            top:0;
-            // height: 220px;
-            // width: 220px;
-            height: 100%;
-            width: auto;
+            top:0;                  
             border-radius: 50%;          
+        }        
+        .desktop-img {
+            display: none;
+            height: 220px;
+            width: 220px;
+        }
+        .mobile-img {
+            display: flex;
+            height: 110px;
+            width: 110px;
         }
     }
+    
     .middle {
         position: absolute;
         top: 50%;
@@ -104,10 +112,18 @@
         }
     }    
 }
+
 @media only screen and (min-width: 1100px) {
     .middle .intro {
         h2 {
             margin: 20px;
         }
     }
+    .top-section .img-container img.desktop-img {        
+        display: flex;        
+    }
+    .top-section .img-container img.mobile-img {
+        display: none;
+    }
 }
+

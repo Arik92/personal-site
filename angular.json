@@ -29,7 +29,8 @@
               "src/assets/i18n"              
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/queries.scss"
             ],
             "scripts": ["node_modules/particles.js/particles.js"]
           },
@@ -93,7 +94,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/queries.scss"
             ],
             "scripts": []
           }
