@@ -80,4 +80,12 @@
             width:100%;
         }
     }
+    .rtl {
+        .sidebar-section {
+            width:30%;
+        }
+        .router-container {
+            left: 0;
+        }
+    }
 }

@@ -1,11 +1,11 @@
 <div class="page-container">
-    <div class="projects-container">
+    <div class="page-inner-container">
       <div class="headline"> 
-        <p>Some of the projects I have worked on over the years</p> 
+        <p>{{ 'PROJECTS.HEADER' | translate }}</p> 
       </div>
         <div class="content">                             
             <div class="project-square" *ngFor="let project of projectList">
-              <a class="project-title" routerLink="">{{project.title}}  </a>            
+              <a class="project-title" [routerLink]="['/detail', project.title]">{{project.title}}  </a>            
             </div>            
         </div>
     </div>

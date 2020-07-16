@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentService } from '../content.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,19 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  projectList: any[] = [
-    {
-    title: 'Emunah'
-  },
-  {
-    title: 'DankTickets'
-  },
-  {
-    title: 'RunTimes'
-  },
+  projectList: any[] = [  
 ];
 
-  constructor() { }
+  constructor(private content: ContentService) {
+    this.projectList = this.content.getProjectTitles();
+   }
 
   ngOnInit(): void {   
   }

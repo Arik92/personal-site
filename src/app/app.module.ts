@@ -15,6 +15,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { RTLDivDirective } from './rtldiv.directive';
 import { DrawerComponent } from './drawer/drawer.component';
+import { DetailComponent } from './detail/detail.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -29,7 +30,8 @@ export function createTranslateLoader(http: HttpClient) {
     AboutComponent,
     WelcomeComponent,
     RTLDivDirective,
-    DrawerComponent
+    DrawerComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

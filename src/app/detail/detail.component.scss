@@ -1,0 +1,101 @@
+.header, .content {
+    position: absolute;
+    width: 80%;
+}
+.header {
+    top: 0;
+    left:9.5%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    .title {
+        font-size: 50px;
+    }
+}
+.content {
+    top: 10%;
+    left: 10%;
+    height: 90%;
+    .description {
+        position: absolute;
+        top: 5%;
+        height: 25%;        
+        width:100%;
+        .en {
+            display:block;
+        }
+        .he {
+            display: none;
+        }
+    }
+    .thumbnail {
+        position: absolute;
+        top: 30%;
+        height: 50%;
+        width:100%;
+        a {
+            position:absolute;
+            height: 100%;
+            width:100%;
+            img {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                opacity: 0.6;
+            }
+            img:hover {            
+                opacity: 1;
+            }
+        }        
+    }
+    .technologies {
+        position: absolute;
+        top: 80%;
+        height: 20%;
+        width:100%;
+    }
+}
+.back {
+    position: absolute;
+    left: 0;
+    height: 15%;
+    width: 10%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    .left-arrow {
+        display: block;
+    }
+    .right-arrow {
+        display: none;
+    }
+    svg {
+        fill: #747474;
+        height: 60px;
+        width: 60px;
+    }
+    svg:hover {
+        fill: #ffffff;
+        opacity: 1;
+    }
+}
+.rtl {
+    .back {
+        left: unset;
+        right: 0;
+        .left-arrow {
+            display: none;
+        }
+        .right-arrow {
+            display: block;
+        }
+    }
+    .description {
+        .he {
+            display: block;        
+        }
+        .en {
+            display: none;
+        }
+    }    
+}
