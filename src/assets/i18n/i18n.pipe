@@ -14,5 +14,14 @@ WELCOME_MESSAGE | Welcome! | !ברוכים הבאים
 <=
 =>SIDEBAR
 SELF_NAME | Arik Aviv | אריק אביב
-SELF_DESCRIPTION | Hey what's up, My name is Arik and I have created this site | היי, אני אריק ואני היוצר של האתר שאתם מסתובבים בו
+SELF_DESCRIPTION | Hey, My name is Arik and this is my site! | היי, אני אריק וזה האתר שלי!
+<=
+
+=>PROJECTS
+HEADER | Projects | פרוייקטים
+DESCRIPTION | Some of the projects I that I am prenestly working/have worked on over the years | חלק מהפרוייקטים שאני עובד עליהם בהווה או שעבדתי עליהם במשך השנים
+<=
+
+=>DETAIL
+TECH | Technologies used | טכנולוגיות שנעשה בהן שימוש
 <=

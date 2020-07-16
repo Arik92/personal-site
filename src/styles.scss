@@ -40,6 +40,16 @@ body {
         left: 2%;
         display: flex;
     }
+    .page-inner-container {
+        position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: #393e46;
+    opacity: 0.8;
+    overflow:auto;
+
+    }
     svg {
         fill: #222831;
     }

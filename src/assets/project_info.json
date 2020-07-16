@@ -1,0 +1,23 @@
+{
+    "projects": [
+        {
+            "title": "RunTimez",
+            "english_description": "Originally developed for my running group, after the coach complained he has no easy way of determining time golas for his runners based on their measurements for 5k and 10k runs. That's where I came in. The app simply and elegently determines running times for anyone, and offers to download a csv of them for future reference",
+            "hebrew_description": "פותח במקור עבור קבוצת הריצה שלי, כאשר המאמן התלונן בפניי כי אין לו דרך נוחה לגזור זמנים לתחרות עבור המתאמנים שלו על בסיס תוצאות ריצות ה5 ו10 קילומטר שלהם",
+            "tech": ["Angular 7","Node","Express", "CSV"],
+            "site_url": "https://run-timez.herokuapp.com",
+            "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
+            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
+        },
+        {
+            "title": "Kashragon",
+            "english_description": "The project aims to simplify interaction between reserve recruits and suppliers, which has so far been done with pen and paper.",
+            "tech": ["Oauth?", "fb-login", "mongoDB"]
+        },
+        {
+            "title": "Emunah",
+            "english_description": "One of my first projects.",
+            "tech": ["AngularJS", "Twilio", "Hebcal API", "Google Maps API", "Youtube API", "MongoDB"]
+        }        
+    ]
+}
