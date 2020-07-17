@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "i18n:generate": "i18n src/assets/i18n/i18n.pipe src/assets/i18n",
-    "postinstall": "ng build --aot --prod --output-hashing none",
+    "postinstall": "ng build --prod --aot --vendor-chunk --common-chunk --delete-output-path --buildOptimizer",
     "e2e": "ng e2e"
   },
   "engines": {
