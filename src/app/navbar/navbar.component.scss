@@ -113,22 +113,7 @@
         }
     }
 }
-@media only screen and (min-width: 1100px) {    
-      
-    // .navbar-container .index {
-    //         width:30%;
-    //     }
-    //     .navbar-container .navigation {
-    //         width: 70%;
-    //         left: 30%;
-    //     }      
-    //     .navbar-container .burger-nav {
-    //         display: none;
-    //     }
-    //     .navbar-container .desktop-nav {
-    //         display:flex;  
-    //     }
-
+@media only screen and (min-width: 1100px) {  
     .index {
         width:30%;
         h1 {
@@ -139,12 +124,10 @@
         width: 70%;
         left: 30%;
     }       
-
     .burger-nav {
         display: none;
     }
     .desktop-nav {
         display: flex;
-    }
-    
+    }    
 }
