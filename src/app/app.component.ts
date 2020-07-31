@@ -18,10 +18,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.translator.init(this.currentLanguage).then(res => {
       //translate service initiated
       this.navigation.drawerToggle.subscribe(newDrawerState => {
-        this.isOpen = newDrawerState;
-        if (this.isOpen) {
-          document.getElementsByClassName('drawer-section')[0].setAttribute('height', '660px');
-        }
+        this.isOpen = newDrawerState;        
       })
     });  
   }
