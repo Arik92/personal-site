@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {Router, NavigationStart} from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { TranslatorService } from './translator.service';
 
@@ -39,12 +40,17 @@ export class NavigationService {
     route: '/'
   }]);
 
-  constructor(private translator: TranslatorService) {
+  constructor(private translator: TranslatorService, private router: Router) {
     this.drawerToggle.next(this.drawerToggle.value);
     this.translator.langChange$.subscribe(languageObj => {
       const translationObj = languageObj.translations.NAVBAR;      
       const newPages = this.updateNavPages(translationObj);
       this.navPages.next(newPages);
+      this.router.events.subscribe(event => {
+        if (event instanceof NavigationStart) {
+          this.drawerToggle.next(false);
+        }
+      })
     });
    }
 

@@ -14,12 +14,8 @@ export class DrawerComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.navigation.navPages.subscribe(newPages => {
       this.navPages = newPages;
-    });    
-  }
-
-  toggleNav(): void {
-    this.navigation.toggleDrawerState();
-  }
+    });       
+  }  
 
   ngOnDestroy(): void {
     this.navigation.navPages.unsubscribe();

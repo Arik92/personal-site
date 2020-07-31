@@ -10,9 +10,9 @@ declare var particlesJS: any;
 
 export class NavbarComponent implements OnInit, OnDestroy {
   navPages: navItem[] = [];
+  isOpenDrawer: boolean = false;
 
-  constructor(private navigation: NavigationService) {    
-   }
+  constructor(private navigation: NavigationService) {}
 
   ngOnInit(): void {
     particlesJS.load('navbar-particles', 'assets/particles.json', function() {
@@ -20,7 +20,10 @@ export class NavbarComponent implements OnInit, OnDestroy {
     });    
     this.navigation.navPages.subscribe(newPages => {
       this.navPages = newPages;
-    })
+    });
+    this.navigation.drawerToggle.subscribe(newState => {
+      this.isOpenDrawer = newState;
+    });
   }
 
   isDivider(index:number):boolean {

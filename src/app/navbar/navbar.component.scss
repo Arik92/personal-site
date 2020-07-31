@@ -83,25 +83,22 @@
     justify-content: center;
     height:100%;
     width:100%;
-    h3 {
-        // position: absolute;
-        // right: 35px;
-        // left: unset;
-        // margin: 0;
+    h3 {        
         svg {
             padding-top:5px;
         }
         svg:hover {
-            cursor: pointer;
-            fill: #32e0c4;
+            cursor: pointer;            
         }
     }
 } 
+.drawer-open {
+    fill: #32e0c4;
+}
 
 .rtl {
     .navigation{
          left:0;
-        //  right: 50%;
     }
     .index {
         right:0;
