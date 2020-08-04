@@ -16,6 +16,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { RTLDivDirective } from './rtldiv.directive';
 import { DrawerComponent } from './drawer/drawer.component';
 import { DetailComponent } from './detail/detail.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -31,7 +32,8 @@ export function createTranslateLoader(http: HttpClient) {
     WelcomeComponent,
     RTLDivDirective,
     DrawerComponent,
-    DetailComponent
+    DetailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
