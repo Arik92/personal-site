@@ -1,11 +1,11 @@
 <div class="page-container">
     <div class="page-inner-container">
       <div class="headline"> 
-        <p>{{ 'PROJECTS.HEADER' | translate }}</p> 
+        <h1>{{ 'PROJECTS.HEADER' | translate | uppercase}}</h1> 
       </div>
         <div class="content">                             
             <div class="project-square" *ngFor="let project of projectList">
-              <a class="project-title" [routerLink]="['/detail', project.title]">{{project.title}}  </a>            
+              <a class="project-title" [routerLink]="['/detail', project.title]">{{project.title | uppercase}}  </a>            
             </div>            
         </div>
     </div>

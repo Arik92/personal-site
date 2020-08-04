@@ -10,13 +10,31 @@
             "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
         },
         {
+            "title": "RunTimez - desktop",
+            "english_description": "",
+            "hebrew_description": "",
+            "tech": ["Angular 7","Node","Express", "CSV", "Electron"],
+            "site_url": "https://run-timez.herokuapp.com",
+            "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
+            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
+        },
+        {
+            "title": "Tic Tac Toez",
+            "english_description": "",
+            "hebrew_description": "",
+            "tech": ["AngularJS","Node","Express", "Sockets", "postgres SQL"],
+            "site_url": "https://run-timez.herokuapp.com",
+            "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
+            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
+        },
+        {
             "title": "Kashragon",
             "english_description": "The project aims to simplify interaction between reserve recruits and suppliers, which has so far been done with pen and paper.",
             "tech": ["Oauth?", "fb-login", "mongoDB"]
         },
         {
             "title": "Emunah",
-            "english_description": "One of my first projects.",
+            "english_description": "One of my first projects, Emunah is a client-tailored site dedicated to Rav Dror, a LA based Rabbi with his own youtube channel. The site features information about his works, merchandise, tours and videos. From a technical perspective it featured youtube API, hebcal API google Maps API and implemented Twilio for whatsapp group management. Responsibilities: project management and development",
             "tech": ["AngularJS", "Twilio", "Hebcal API", "Google Maps API", "Youtube API", "MongoDB"]
         }        
     ]
