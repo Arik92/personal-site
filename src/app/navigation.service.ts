@@ -22,12 +22,12 @@ export class NavigationService {
   {
     key: 'PIXEL_ART',
     title: '',
-    route: '/'
+    route: 'pixel-art'
   },
   {
     key: 'GAMES',
     title: '',
-    route: '/'
+    route: 'games'
   },
   {
     key: 'ABOUT',
@@ -37,7 +37,7 @@ export class NavigationService {
   {
     key: 'CONTACT',
     title: '',
-    route: '/'
+    route: 'contact'
   }]);
 
   constructor(private translator: TranslatorService, private router: Router) {
