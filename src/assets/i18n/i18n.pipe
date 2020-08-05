@@ -12,6 +12,9 @@ CONTACT | Contact | צרו קשר
 =>WELCOME
 WELCOME_MESSAGE | Welcome! | !ברוכים הבאים
 <=
+=>COMING_SOON
+PREVIEW | Coming soon! | !בקרוב 
+<=
 =>SIDEBAR
 SELF_NAME | Arik Aviv | אריק אביב
 SELF_DESCRIPTION | Hey, My name is Arik and this is my site! | היי, אני אריק וזה האתר שלי!
