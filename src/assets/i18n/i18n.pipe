@@ -10,21 +10,62 @@ CONTACT | Contact | צרו קשר
 <=
 
 =>WELCOME
-WELCOME_MESSAGE | Welcome! | !ברוכים הבאים
+WELCOME_MESSAGE | Welcome! | ברוכים הבאים!
+EXPLORE | You can start exploring by creating particles with your mouse, by checking out my | יש הרבה מה לראות! אפשר להזיז את החלקיקים שעל המסך, לראות 
+PROJECTS | projects | פרוייקטים שעשיתי
+ALTERNATE |or alternatively, find out more | או לחלופין לגלות עוד טיפה על
+ABOUT |about me | מי אני
 <=
+
 =>COMING_SOON
-PREVIEW | Coming soon! | !בקרוב 
+PREVIEW | Coming soon! | בקרוב! 
+ENGAGE | Looks like you reached a section still in development. But all is not lost, there are still plenty of other sections for you to visit! For example, here are some of | נראה שהגעת לחלק מהאתר שעדיין בפיתוח. אל חשש, יש הרבה מקומות אחרים שאפשר לבקר בהם! בתור התחלה הנה חלק  
+PROJECTS | my projects | מהפרויקטים שלי
 <=
+
+=>ABOUT
+HEADER | About me | טיפה עליי
+IN_ABOUT | in about | בבערך
+WORDS | words | מילים
+INTRO | intro | תמצית
+INTRO_NAME | Arik Aviv, | אריק אביב, בן 
+INTRO_CONT | years old Tel Aviv based fullstack developer. I build web based and native applications from the ground up - specializing in Angular, Flutter, Electron and NodeJS apps. | מפתח צד לקוח ושרת מתל אביב. אני בונה אפליקציות מבוססות web ו-native כאשר אני מתמחה בטכנולוגיות של Angular, Flutter, Electron ו-NodeJS.
+CURRENTLY | currently | בהווה
+CURRENTLY_CONT | I've been programming for the past 3 years as a freelancer, at Israeli start-ups, and for software development companies. I enjoy helping people, and love the problem-solving and creative aspects of programming. I am available to co-operate and develop on interesting projects. I am particularly interested in applications that will actively improve people's lives, new technologies, and game development. | ב3 השנים האחרונות תכנתתי כפרילנסר, בסטארט-אפים ובחברות פיתוח תוכנה. אני אוהב את פתירת הבעיות והצד היצירתי של פיתוח תוכנה. אני זמין לשיתופי פעולה ופיתוח בפרויקטים מעניינים. בפרט מעניינים אותי פרויקטים שעוסקים בשיפור חיי היום-יום של אנשים, טכנולוגיות חדשות, ופיתוח משחקים. 
+LIKES | I like | אני אוהב
+<=
+
+=>HOBBIES
+HOBBY1 | Playing guitar, mostly rock and 80's era songs | לנגן בגיטרה, בעיקר רוק ושירים מתקופת שנות ה80.
+HOBBY2 | Table tennis | טניס שולחן
+HOBBY3 | Running | ריצה
+HOBBY4 | Board Games(Cards Against Humanity, Munchkin and others) | משחקי קופסא(קלפים נגד האנושות, מנצ'קין, ועוד)
+HOBBY5 | Card Games(Magic the Gathering, Hearthstone) | משחקי קלפים(Magic the Gathering, Hearthstone)
+<=
+
+=>CONTACT
+HEADER | Contact | צרו קשר
+CONTACT_MESSAGE | We might not know each other yet, but it does'nt have to stay that way! For business inquiries, job and development offers, or if you just liked this site and wanna let me know - feel free to get in touch. Im available through email, linkedIn, github, and Morse code. | אנחנו לא מכירים עדיין, אבל זה לא חייב להישאר ככה! בין אם בשביל הצעות עסקיות, פיתוח, עבודה, או סתם כי אהבת את האתר ובא לך לומר מילה טובה - אני מזמין אותך לרשום לי. הדרכים הכי טובות לזה הן אימייל, לינקדאין, גיטהאב וקוד מורס.
+FEEL_FREE | Feel free to reach out | ליצירת קשר
+<=
+
 =>SIDEBAR
+HEBREW | He | עברית
+ENGLISH | En | אנגלית
 SELF_NAME | Arik Aviv | אריק אביב
-SELF_DESCRIPTION | Hey, My name is Arik and this is my site! | היי, אני אריק וזה האתר שלי!
+INTRODUCTION | Hi, glad you could make it! | היי, שמח שבאתם לבקר!
+SELF_DESCRIPTION | My name is Arik and this is my site. Feel free to look around. | אני אריק אביב, וברוכים הבאים לאתר שלי.תרגישו בבית.
 <=
 
 =>PROJECTS
-HEADER | Projects | פרוייקטים
+HEADER | Projects | פרויקטים
 DESCRIPTION | Some of the projects I that I am prenestly working/have worked on over the years | חלק מהפרוייקטים שאני עובד עליהם בהווה או שעבדתי עליהם במשך השנים
 <=
 
 =>DETAIL
 TECH | Technologies used | טכנולוגיות שנעשה בהן שימוש
+STATUS_TITLE | Status | מצב הפרויקט
+STATUS_IN_DEVELOPMENT | Under development | בפיתוח
+STATUS_DONE | Completed | הושלם
+STATUS_DONE_UNMAINTAINED | הושלם, לא נתמך כיום
 <=

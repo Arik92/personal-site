@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DetailComponent } from './detail/detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -16,7 +17,7 @@ const routes: Routes = [
   { path: 'pixel-art', component: ComingSoonComponent },  
   { path: 'games', component: ComingSoonComponent },  
   { path: 'about', component: ComingSoonComponent },  
-  { path: 'contact', component: ComingSoonComponent },   
+  { path: 'contact', component: ContactComponent },   
   { path: 'detail/:title', component: DetailComponent },
   { path: '**', component:  NotFoundComponent } // 404 catch all route.
 ];

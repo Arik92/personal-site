@@ -7,17 +7,8 @@
             "tech": ["Angular 7","Node","Express", "CSV"],
             "site_url": "https://run-timez.herokuapp.com",
             "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
-            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
-        },
-        {
-            "title": "RunTimez - desktop",
-            "english_description": "",
-            "hebrew_description": "",
-            "tech": ["Angular 7","Node","Express", "CSV", "Electron"],
-            "site_url": "https://run-timez.herokuapp.com",
-            "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
-            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
-        },
+            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive", "Flutter implementation" ]
+        },        
         {
             "title": "Tic Tac Toez",
             "english_description": "",
@@ -25,7 +16,7 @@
             "tech": ["AngularJS","Node","Express", "Sockets", "postgres SQL"],
             "site_url": "https://run-timez.herokuapp.com",
             "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
-            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
+            "future features": []
         },
         {
             "title": "Kashragon",
