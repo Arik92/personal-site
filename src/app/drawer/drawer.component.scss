@@ -3,6 +3,11 @@
     height: 100%;
     width: 100%;
     background-color: #393e46;
+    .lang-select {
+        position:absolute;
+        height: 10%;
+        width: 100%;
+    }
     }
 
 svg:hover {
@@ -10,8 +15,10 @@ svg:hover {
 }
 
 ul {
-    height:100%;
-    width:100%;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 10%;
     display: flex;
     flex-direction:column;
     align-items:center;

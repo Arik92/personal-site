@@ -20,8 +20,9 @@
                 <span class="en" rtlDiv>{{detailItem.english_description}}</span>
                 <span class="he" rtlDiv>{{detailItem.hebrew_description}}</span>
             </div>
+            <div class="code"><a href="{{detailItem.code_url}}" target="_blank">{{ 'DETAIL.SOURCE_CODE' | translate }}</a></div>
             <div class="thumbnail">
-                <!-- <a href="{{detailItem.site_url}}" target="_blank"><img src="{{detailItem.thumb_url}}" alt=""></a> -->
+                <a href="{{detailItem.site_url}}" target="_blank"><img src="{{detailItem.thumb_url}}" alt=""></a>
             </div>
             <div class="technologies">{{ 'DETAIL.TECH' | translate }}:
                 <ng-template ngFor let-item [ngForOf]="detailItem.tech" let-i="index">

@@ -20,6 +20,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { ContactBtnsComponent } from './contact-btns/contact-btns.component';
 import { ContactComponent } from './contact/contact.component';
+import { LanguageSelectComponent } from './language-select/language-select.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -39,7 +40,8 @@ export function createTranslateLoader(http: HttpClient) {
     NotFoundComponent,
     ComingSoonComponent,
     ContactBtnsComponent,
-    ContactComponent
+    ContactComponent,
+    LanguageSelectComponent
   ],
   imports: [
     BrowserModule,

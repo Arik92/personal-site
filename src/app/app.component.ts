@@ -25,7 +25,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     particlesJS.load('app-particles', 'assets/particles.json', function() {
-      console.log('callback - app particles config loaded');
+      // console.log('callback - app particles config loaded');
     });          
   }  
   ngOnDestroy() {

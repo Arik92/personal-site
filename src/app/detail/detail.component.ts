@@ -17,7 +17,6 @@ export class DetailComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.routeSubscription = this.route.paramMap.subscribe((paramsMap:any) => {
       this.detailItem = this.content.getProject(paramsMap.params.title);
-      console.log('detail item is ', this.detailItem);
       this.determineStatus(this.detailItem.status);
     });
   }
