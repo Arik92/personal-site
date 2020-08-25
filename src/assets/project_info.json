@@ -2,38 +2,43 @@
     "projects": [
         {
             "title": "RunTimez",
-            "english_description": "Originally developed for my running group, after the coach complained he has no easy way of determining time golas for his runners based on their measurements for 5k and 10k runs. That's where I came in. The app simply and elegently determines running times for anyone, and offers to download a csv of them for future reference",
-            "hebrew_description": "פותח במקור עבור קבוצת הריצה שלי, כאשר המאמן התלונן בפניי כי אין לו דרך נוחה לגזור זמנים לתחרות עבור המתאמנים שלו על בסיס תוצאות ריצות ה5 ו10 קילומטר שלהם",
+            "status": "DEV",
+            "english_description": "Originally developed for my running group, after the coach complained he has no easy way of determining time goals for his runners based on their measurements for 5k and 10k runs. That's where I came in. The app simply and elegently determines running times for anyone, and offers to download a csv of them for future reference",
+            "hebrew_description": "פותח במקור עבור קבוצת הריצה שלי, כאשר המאמן התלונן בפניי כי אין לו דרך נוחה לגזור זמנים לתחרות עבור המתאמנים שלו על בסיס תוצאות ריצות ה5 ו10 קילומטר שלהם. כאן אני נכנסתי, ובניתי פתרון אלגנטי עבורם שמחשב את תוצאות הזמנים, מציג אותן ומייצא לקובץ CSV ",
             "tech": ["Angular 7","Node","Express", "CSV"],
             "site_url": "https://run-timez.herokuapp.com",
             "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
-            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
-        },
-        {
-            "title": "RunTimez - desktop",
-            "english_description": "",
-            "hebrew_description": "",
-            "tech": ["Angular 7","Node","Express", "CSV", "Electron"],
-            "site_url": "https://run-timez.herokuapp.com",
-            "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
-            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
-        },
+            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive", "Flutter implementation" ]
+        },        
         {
             "title": "Tic Tac Toez",
+            "status": "DONE",
             "english_description": "",
             "hebrew_description": "",
             "tech": ["AngularJS","Node","Express", "Sockets", "postgres SQL"],
             "site_url": "https://run-timez.herokuapp.com",
             "thumb_url": "assets/project_thumbs/Runtimez_thumb.png",
-            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive"]
+            "future features": []
+        },
+        {
+            "title": "Dev Meeting-i18n",
+            "status": "DONE",
+            "english_description": "Dev meeting made for spectory devs, where I discuss the concept of app internationalization and localization, and how it can be used to make sites more accessible. The most clear example for this would be this site: The way in which my entire site is translated and behaves differently for english/hebrew texts leverages this method.",
+            "hebrew_description": "פגישת מפתחים בספקטורי שבה הצגתי את הקונספט של הנגשת אפליקציות, התרומה שלה עבור המשתמשים ואיך אפשר לממש אותה בangular. הדוגמה הפרקטית הכי טובה לכך היא האתר שאתם נמצאים בו, שעושה שימוש בטכנולוגיה הזו ",
+            "tech": ["Angular","i18n","markdown"],
+            "site_url": "https://spectory.com/blog/app-internationalization-and-localization-for-angular-apps/",
+            "thumb_url": "",
+            "future features": []
         },
         {
             "title": "Kashragon",
+            "status": "DEV",
             "english_description": "The project aims to simplify interaction between reserve recruits and suppliers, which has so far been done with pen and paper.",
             "tech": ["Oauth?", "fb-login", "mongoDB"]
         },
         {
             "title": "Emunah",
+            "status": "UNM",
             "english_description": "One of my first projects, Emunah is a client-tailored site dedicated to Rav Dror, a LA based Rabbi with his own youtube channel. The site features information about his works, merchandise, tours and videos. From a technical perspective it featured youtube API, hebcal API google Maps API and implemented Twilio for whatsapp group management. Responsibilities: project management and development",
             "tech": ["AngularJS", "Twilio", "Hebcal API", "Google Maps API", "Youtube API", "MongoDB"]
         }        

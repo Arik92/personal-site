@@ -1,10 +1,37 @@
-<div class="page-container">
-    <div class="content section">
-        <h3>About this site</h3>
-        <div class="content">
-            This site was made with angular 9 and flexbox. It is responsive for mobile devices.
-            Source code? 
-            download an electron version of the site?
+<div class="page-container" rtlDiv>
+    <div class="page-inner-container" rtlDiv>
+        <div class="headline">
+            <h1>{{ 'ABOUT.HEADER' | translate | uppercase}}</h1>
+            <h4>({{ 'ABOUT.IN_ABOUT' | translate | uppercase}} {{wordCount}} {{ 'ABOUT.WORDS' | translate | uppercase}})
+            </h4>
+        </div>
+        <div class="content" rtlDiv>
+            <!-- This site was made with angular 9 and flexbox. It is responsive for mobile devices.
+               Source code? 
+               download an electron version of the site? -->
+            <div class="intro">
+                <h5>{{ 'ABOUT.INTRO' | translate | uppercase}}</h5>
+                {{ 'ABOUT.INTRO_NAME' | translate }} {{age}} {{ 'ABOUT.INTRO_CONT' | translate }}
+                <!-- Programming experience:  -->
+                <!-- Technical experience -->
+
+            </div>
+            <div class="current">
+                <h5>{{ 'ABOUT.CURRENTLY' | translate | uppercase}}</h5>
+                <!-- I've been programming for the past 3 years as a freelancer, at Israeli start-ups, and for software
+                development companies.
+                I enjoy helping people, and love the problem-solving and creative aspects of programming.
+                <br>
+                I am available to co-operate and develop on interesting projects.
+                <br> I am particularly interested in applications that will actively improve people's lives, new technologies, and game development. -->
+                {{ 'ABOUT.CURRENTLY_CONT' | translate }}
+            </div>
+            <div class="likes">
+                <h5>{{ 'ABOUT.LIKES' | translate | uppercase}}</h5>
+                <ul>
+                    <li *ngFor="let hobby of hobbies">{{hobby}}</li>                    
+                </ul>
+            </div>            
         </div>
     </div>
 </div>

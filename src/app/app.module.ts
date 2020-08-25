@@ -18,6 +18,8 @@ import { DrawerComponent } from './drawer/drawer.component';
 import { DetailComponent } from './detail/detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { ContactBtnsComponent } from './contact-btns/contact-btns.component';
+import { ContactComponent } from './contact/contact.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -35,7 +37,9 @@ export function createTranslateLoader(http: HttpClient) {
     DrawerComponent,
     DetailComponent,
     NotFoundComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    ContactBtnsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

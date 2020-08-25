@@ -48,22 +48,55 @@ body {
     background-color: #393e46;
     opacity: 0.8;
     overflow:auto;
-
     }
-    .transparent-container {  
+    .headline {
+        position: absolute;
+        height: 5%;
+        width: 100%;
+        top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+    }
+    // .transparent-container {  
+    //     position: absolute;
+    //     color: #eeeeee;
+    //     height: 10%;
+    //     width: 13%;
+    //     left: 45%;
+    //     top: 40%;
+    //     .transparent-msg {
+    //         position: absolute;
+    //         position: absolute;
+    //         height: 100%;
+    //         width: 100%;
+    //         direction: ltr;
+    //         user-select: none;
+    //     }
+    // }
+    .zero-state-container {  
         position: absolute;
         color: #eeeeee;
-        height: 10%;
-        width: 13%;
-        left: 45%;
+        height: 20%;
+        width: 50%;
+        left: 25%;
         top: 40%;
-        .transparent-msg {
+        .zero-state-msg {
             position: absolute;
             position: absolute;
             height: 100%;
             width: 100%;
             direction: ltr;
             user-select: none;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .zero-state-msg.rtl {      
+                direction: rtl;
         }
     }
     svg {
