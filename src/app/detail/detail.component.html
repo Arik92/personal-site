@@ -10,12 +10,18 @@
             <div class="title">{{detailItem.title}}</div>
         </div>
         <div class="content">
+            <div class="status">
+                <span [ngClass]="{'show-status':projectStatus === 1}" class="development">{{ 'DETAIL.STATUS_TITLE' | translate }}: {{ 'DETAIL.STATUS_IN_DEVELOPMENT' | translate }} </span>
+                <span [ngClass]="{'show-status':projectStatus === 2}" class="done">{{ 'DETAIL.STATUS_TITLE' | translate }}: {{ 'DETAIL.STATUS_DONE' | translate }} </span>
+                <span [ngClass]="{'show-status':projectStatus === 3}" class="done-un">{{ 'DETAIL.STATUS_TITLE' | translate }}: {{ 'DETAIL.STATUS_DONE_UNMAINTAINED' | translate }} </span>
+            </div>
+            
             <div class="description" rtlDiv>
                 <span class="en" rtlDiv>{{detailItem.english_description}}</span>
                 <span class="he" rtlDiv>{{detailItem.hebrew_description}}</span>
             </div>
             <div class="thumbnail">
-                <a href="{{detailItem.site_url}}" target="_blank"><img src="{{detailItem.thumb_url}}" alt=""></a>
+                <!-- <a href="{{detailItem.site_url}}" target="_blank"><img src="{{detailItem.thumb_url}}" alt=""></a> -->
             </div>
             <div class="technologies">{{ 'DETAIL.TECH' | translate }}:
                 <ng-template ngFor let-item [ngForOf]="detailItem.tech" let-i="index">

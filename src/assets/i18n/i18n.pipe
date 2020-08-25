@@ -67,5 +67,5 @@ TECH | Technologies used | טכנולוגיות שנעשה בהן שימוש
 STATUS_TITLE | Status | מצב הפרויקט
 STATUS_IN_DEVELOPMENT | Under development | בפיתוח
 STATUS_DONE | Completed | הושלם
-STATUS_DONE_UNMAINTAINED | הושלם, לא נתמך כיום
+STATUS_DONE_UNMAINTAINED | Completed, unmaintained | הושלם, לא נתמך כיום
 <=
