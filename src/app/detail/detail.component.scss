@@ -1,6 +1,7 @@
 .header, .content {
     position: absolute;
     width: 80%;
+    user-select: none;
 }
 .header {
     top: 0;
@@ -12,7 +13,7 @@
     .title {
         position: absolute;
         height: 100%;
-        width: 480px;
+        width: 80%;
         left: 65px;
         font-size: 25px;
         display: flex;
@@ -57,9 +58,15 @@
             display: none;
         }
     }
+    .code {
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        top: 30%;
+    }
     .thumbnail {
         position: absolute;
-        top: 30%;
+        top: 40%;
         height: 50%;
         width:100%;
         a {
@@ -79,8 +86,8 @@
     }
     .technologies {
         position: absolute;
-        top: 80%;
-        height: 20%;
+        top: 90%;
+        height: 10%;
         width:100%;
     }
 }

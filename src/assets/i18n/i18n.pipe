@@ -59,7 +59,7 @@ SELF_DESCRIPTION | My name is Arik and this is my site. Feel free to look around
 
 =>PROJECTS
 HEADER | Projects | פרויקטים
-DESCRIPTION | Some of the projects I that I am prenestly working/have worked on over the years | חלק מהפרוייקטים שאני עובד עליהם בהווה או שעבדתי עליהם במשך השנים
+DESCRIPTION | Some of the solo(non-commercial) projects that I have worked on over the years or am currently developing | חלק מהפרויקטים הלא מסחריים שאני עובד עליהם בהווה או שעבדתי עליהם במשך השנים
 <=
 
 =>DETAIL
@@ -68,4 +68,5 @@ STATUS_TITLE | Status | מצב הפרויקט
 STATUS_IN_DEVELOPMENT | Under development | בפיתוח
 STATUS_DONE | Completed | הושלם
 STATUS_DONE_UNMAINTAINED | Completed, unmaintained | הושלם, לא נתמך כיום
+SOURCE_CODE | Project source code | קוד מקור של הפרויקט
 <=

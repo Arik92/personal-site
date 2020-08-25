@@ -2,9 +2,7 @@
     <div class="top-section">
         <!-- <img src="" alt=""> image be here-->
         <div class="language-select">
-            <h4 class="lng-btn"><a (click)="changeLang('en')">{{ 'SIDEBAR.ENGLISH' | translate }}</a></h4>
-            <div>&nbsp;</div>
-            <h4 class="lng-btn"><a (click)="changeLang('iw')">{{ 'SIDEBAR.HEBREW' | translate }}</a></h4>
+            <app-language-select></app-language-select>
         </div>
         <div class="img-container">
             <img class="tall-img" src="assets/portait-tall.jpg" alt="">

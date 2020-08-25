@@ -39,7 +39,6 @@ export class TranslatorService {
 
   getTranslation(lang) {
     const res = this.translate.getTranslation(lang);
-    console.log('service language obj? ', res);
     return this.translate.getTranslation(lang);
   } 
 

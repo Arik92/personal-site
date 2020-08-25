@@ -3,6 +3,7 @@
       <div class="headline"> 
         <h1>{{ 'PROJECTS.HEADER' | translate | uppercase}}</h1> 
       </div>
+      <div class="description"> {{ 'PROJECTS.DESCRIPTION' | translate }} </div>
         <div class="content">                             
             <div class="project-square" *ngFor="let project of projectList">
               <a class="project-title" [routerLink]="['/detail', project.title]">{{project.title | uppercase}}  </a>            
