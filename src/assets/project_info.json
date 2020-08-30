@@ -12,7 +12,7 @@
             "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive", "Flutter implementation" ]
         },          
         {
-            "title": "Dev Meeting-i18n",
+            "title": "Dev Meeting: i18n",
             "status": "DONE",
             "english_description": "Dev meeting made for spectory devs, where I discuss the concept of app internationalization and localization, and how it can be used to make sites more accessible. The most clear example for this would be this site: The way in which my entire site is translated and behaves differently for english/hebrew texts leverages this method.",
             "hebrew_description": "פגישת מפתחים בספקטורי שבה הצגתי את הקונספט של הנגשת אפליקציות, התרומה שלה עבור המשתמשים ואיך אפשר לממש אותה בangular. הדוגמה הפרקטית הכי טובה לכך היא האתר שאתם נמצאים בו, שעושה שימוש בטכנולוגיה הזו ",
