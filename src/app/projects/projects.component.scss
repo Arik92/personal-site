@@ -29,15 +29,15 @@
         color: #ffffff;
         transition: background 1s, color 0.25s ease-in-out;
         display: flex;
-        flex-direction:column;
+        flex-flow: column;
         align-items: center;
         justify-content: center;
         user-select: none;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size:45px;
+        font-size: 35px;
         .project-title {            
-            overflow:hidden;
+            overflow: hidden;
             text-overflow: ellipsis;            
         }       
     }
