@@ -46,6 +46,7 @@
             .right-arrow {
                 display:none;
             }            
+            
         }
         .desktop-msg.rtl {
             .left-arrow {
@@ -60,6 +61,11 @@
             display: flex;
             flex-direction:column;
             justify-content: space-around;
+            .down-arrow:hover {
+                // fill: #ffffff;
+                fill: #32e0c4;
+                opacity: 1;                
+            }
         }
     }
     

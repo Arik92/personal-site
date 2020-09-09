@@ -1,0 +1,15 @@
+.mobile-explore {
+    display: block;
+}
+.desktop-explore {
+    display: none;
+}
+
+@media only screen and (min-width: 1100px) {    
+    .mobile-explore {
+        display: none;
+    }
+    .desktop-explore {
+        display: block;
+    }
+}
