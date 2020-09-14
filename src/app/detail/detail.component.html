@@ -19,8 +19,11 @@
             <div class="description" rtlDiv>
                 <span class="en" rtlDiv>{{detailItem.english_description}}</span>
                 <span class="he" rtlDiv>{{detailItem.hebrew_description}}</span>
+                <br/>
+                <br/>
+                <br/> <!-- fading space -->                
             </div>
-            <div class="code"><a href="{{detailItem.code_url}}" target="_blank">{{ 'DETAIL.SOURCE_CODE' | translate }}</a></div>
+            <div class="code"><a *ngIf="detailItem.code_url!==''" href="{{detailItem.code_url}}" target="_blank">{{ 'DETAIL.SOURCE_CODE' | translate }}</a></div>
             <div class="thumbnail">
                 <a href="{{detailItem.site_url}}" target="_blank"><img src="{{detailItem.thumb_url}}" alt=""></a>
             </div>

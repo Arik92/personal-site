@@ -6,7 +6,9 @@
       <div class="description"> {{ 'PROJECTS.DESCRIPTION' | translate }} </div>
         <div class="content">                             
             <div class="project-square" *ngFor="let project of projectList">
-              <a class="project-title" [routerLink]="['/detail', project.title]">{{project.title | uppercase}}  </a>            
+              <a class="project-title" [routerLink]="['/detail', project.title]">
+                <span *ngFor="let titlePart of project.title.split(' ')">{{titlePart}}</span>                
+                </a>            
             </div>            
         </div>
     </div>

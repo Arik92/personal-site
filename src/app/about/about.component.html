@@ -1,9 +1,9 @@
 <div class="page-container" rtlDiv>
     <div class="page-inner-container" rtlDiv>
-        <div class="headline">
-            <h1>{{ 'ABOUT.HEADER' | translate | uppercase}}</h1>
-            <h4>({{ 'ABOUT.IN_ABOUT' | translate | uppercase}} {{wordCount}} {{ 'ABOUT.WORDS' | translate | uppercase}})
-            </h4>
+        <div class="about-header">
+            <h2>{{ 'ABOUT.HEADER' | translate | uppercase}}</h2>
+            <div>({{ 'ABOUT.IN_ABOUT' | translate | uppercase}} {{wordCount}} {{ 'ABOUT.WORDS' | translate | uppercase}})
+            </div>
         </div>
         <div class="content" rtlDiv>
             <!-- This site was made with angular 9 and flexbox. It is responsive for mobile devices.
@@ -26,9 +26,9 @@
                 <br> I am particularly interested in applications that will actively improve people's lives, new technologies, and game development. -->
                 {{ 'ABOUT.CURRENTLY_CONT' | translate }}
             </div>
-            <div class="likes">
+            <div class="likes" rtlDiv>
                 <h5>{{ 'ABOUT.LIKES' | translate | uppercase}}</h5>
-                <ul>
+                <ul rtlDiv>
                     <li *ngFor="let hobby of hobbies">{{hobby}}</li>                    
                 </ul>
             </div>            

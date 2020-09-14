@@ -1,7 +1,9 @@
 <div class="zero-state-container" rtlDiv>
     <div class="zero-state-msg" rtlDiv>
         <h3>{{'WELCOME.WELCOME_MESSAGE' | translate}}</h3>
-        <div>{{'WELCOME.EXPLORE' | translate}} <a routerLink="/projects"><b>{{'WELCOME.PROJECTS' | translate}}</b></a>
+        <div class="desktop-explore">{{'WELCOME.EXPLORE' | translate}} <a routerLink="/projects"><b>{{'WELCOME.PROJECTS' | translate}}</b></a>
         {{'WELCOME.ALTERNATE' | translate}} <a routerLink="/about"><b>{{'WELCOME.ABOUT' | translate}}</b></a></div>        
+        <div class="mobile-explore">{{'WELCOME.EXPLORE_MOBILE' | translate}} <a routerLink="/projects"><b>{{'WELCOME.PROJECTS' | translate}}</b></a>
+            {{'WELCOME.ALTERNATE' | translate}} <a routerLink="/about"><b>{{'WELCOME.ABOUT' | translate}}</b></a></div>                   
     </div>
 </div>
