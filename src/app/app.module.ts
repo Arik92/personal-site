@@ -21,6 +21,8 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { ContactBtnsComponent } from './contact-btns/contact-btns.component';
 import { ContactComponent } from './contact/contact.component';
 import { LanguageSelectComponent } from './language-select/language-select.component';
+import { GaiaNavbarComponent } from './gaia-navbar/gaia-navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -41,7 +43,9 @@ export function createTranslateLoader(http: HttpClient) {
     ComingSoonComponent,
     ContactBtnsComponent,
     ContactComponent,
-    LanguageSelectComponent
+    LanguageSelectComponent,
+    GaiaNavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
