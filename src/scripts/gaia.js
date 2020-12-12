@@ -29,6 +29,7 @@ var content_transition = 0;
 var no_touch_screen = false;
 
 var burger_menu;
+var $navbar;
 
 var scroll_distance = 500;
 
@@ -138,6 +139,8 @@ gaia = {
     },
 
     checkScrollForTransparentNavbar: debounce(function() {
+        $navbar = $('.navbar[color-on-scroll]');
+
             if($(document).scrollTop() > scroll_distance ) {
                 if(transparent) {
                     transparent = false;

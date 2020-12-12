@@ -29,8 +29,7 @@
               "src/assets/i18n"              
             ],
             "styles": [
-              
-              "src/styles/fonts/pe-icon-7-stroke.scss",
+              "src/styles/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css",
               "src/styles/fonts/Glyphicons/glyphicons-halflings-regular.eot",
               "src/styles/fonts/Glyphicons/glyphicons-halflings-regular.svg",
               "src/styles/fonts/Glyphicons/glyphicons-halflings-regular.ttf",
