@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LanguageSelectComponent } from './language-select/language-select.component';
 import { GaiaNavbarComponent } from './gaia-navbar/gaia-navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -45,7 +46,8 @@ export function createTranslateLoader(http: HttpClient) {
     ContactComponent,
     LanguageSelectComponent,
     GaiaNavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

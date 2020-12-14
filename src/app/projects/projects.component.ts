@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentService } from '../content.service';
+declare var particlesJS: any;
+
 
 @Component({
   selector: 'app-projects',
@@ -15,6 +17,9 @@ export class ProjectsComponent implements OnInit {
    }
 
   ngOnInit(): void {   
+    particlesJS.load('app-particles', 'assets/particles.json', function() {
+      // console.log('callback - app particles config loaded');
+    });
   }
 
 }

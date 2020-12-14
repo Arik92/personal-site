@@ -31,7 +31,8 @@ var no_touch_screen = false;
 var burger_menu;
 var $navbar;
 
-var scroll_distance = 500;
+var scroll_distance = 500; // distance from which navbar becomes white from transparent.
+
 
 $(function(){
     BrowserDetect.init();
