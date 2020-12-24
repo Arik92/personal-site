@@ -6,20 +6,7 @@
                     <h5 class="title">Site map</h5>
                     <nav>
                         <ul>
-                            <li>
-                                <a href="#">Home</a></li>
-                            <li>
-                                <a href="#">Find offers</a>
-                            </li>
-                            <li>
-                                <a href="#">Discover Projects</a>
-                            </li>
-                            <li>
-                                <a href="#">Our Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
+                            <li *ngFor="let item of siteMap;let i=index"> <a routerLink="{{siteMap[i].route}}">{{siteMap[i].title}}</a> </li>                            
                         </ul>
                     </nav>
                 </div>
@@ -30,19 +17,19 @@
                      <nav>
                         <ul>
                             <li>
-                                <a href="#">Contact Us</a>
+                                <a href="#">Finnancial independance</a>
                             </li>
                             <li>
-                                <a href="#">How it works</a>
+                                <a href="#">MTG</a>
                             </li>
                             <li>
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="#">Synthwave</a>
                             </li>
                             <li>
-                                <a href="#">Company Policy</a>
+                                <a routerLink="home">Best Site in the universe</a>
                             </li>
                             <li>
-                                <a href="#">Money Back</a>
+                                <a href="#">Literal Art</a>
                             </li>
                         </ul>
                     </nav>
@@ -50,18 +37,18 @@
             </div>
             <div class="col-md-3 col-sm-3">
                 <div class="info">
-                    <h5 class="title">Cool Stuff</h5>
+                    <h5 class="title">Upcoming features</h5>
                     <nav>
                         <ul>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-twitter"></i> <b>Get Shit Done</b> The best kit in the market is here, just give it a try and let us...
+                                    <i class="fa fa-lightbulb-o"></i>Beloved <b>Particles</b> from the site's previous version aren't going anywhere.. stay tuned
                                     <hr class="hr-small">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-twitter"></i> We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
+                                    <i class="fa fa-lightbulb-o"></i> <b> Translations</b>: Hebrew version coming soon
                                 </a>
                             </li>
                         </ul>
@@ -70,27 +57,22 @@
             </div>
             <div class="col-md-2 col-md-offset-1 col-sm-3">
                 <div class="info">
-                    <h5 class="title">Follow us on</h5>
+                    <h5 class="title">Check me out on</h5>
                     <nav>
-                        <ul>
+                        <ul>                            
                             <li>
-                                <a href="#" class="btn btn-social btn-facebook btn-simple">
-                                    <i class="fa fa-facebook-square"></i> Facebook
+                                <a class="btn btn-social btn-reddit btn-simple" href="https://github.com/Arik92" target="_blank" >
+                                    <i class="fa fa-github"></i> Github
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-social btn-dribbble btn-simple">
-                                    <i class="fa fa-dribbble"></i> Dribbble
+                                <a class="btn btn-social btn-reddit btn-simple" href="https://www.linkedin.com/in/arik-aviv/" target="_blank" >
+                                    <i class="fa fa-linkedin"></i> LinkedIn
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-social btn-twitter btn-simple">
-                                    <i class="fa fa-twitter"></i> Twitter
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-social btn-reddit btn-simple">
-                                    <i class="fa fa-google-plus-square"></i> Google+
+                                <a class="btn btn-social btn-reddit btn-simple" href="mailto:arik92@gmail.com">
+                                    <i class="fa fa-envelope-o"></i> Email
                                 </a>
                             </li>
                         </ul>

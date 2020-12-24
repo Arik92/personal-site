@@ -20,11 +20,12 @@ const routes: Routes = [
   { path: 'about', component: ComingSoonComponent },  
   { path: 'contact', component: ContactComponent },   
   { path: 'detail/:title', component: DetailComponent },
-  { path: '**', component:  NotFoundComponent } // 404 catch all route.
+  { path: '**', redirectTo: '/home', pathMatch: 'full' } // Until a 404 is implemented
+  // { path: '**', component:  NotFoundComponent } // 404 catch all route.
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)], // , {useHash: true}
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})], // , {useHash: true}
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
