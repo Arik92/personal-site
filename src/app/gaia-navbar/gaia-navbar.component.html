@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
     <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
-    <div class="container">
+    <div class="container" >
         <div class="navbar-header">
             <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
                 <span class="sr-only">Toggle navigation</span>
@@ -9,39 +9,26 @@
                 <span class="icon-bar bar3"></span>
             </button>
             <a routerLink="/home" class="navbar-brand">
-                Arik Aviv
+                {{ 'NAVBAR.PERSONAL_NAME' | translate }}
             </a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right navbar-uppercase">
-                <li>
-                    <a routerLink="/projects">Projects</a>
-                </li>
-                <li>
-                    <a routerLink="about">About</a>
-                </li>
-                <li>
-                    <a routerLink="contact">Contact</a>
-                </li>
+                <li *ngFor="let navPage of navPages"><a routerLink="{{navPage.route}}">{{navPage.title}}</a>
+                
                 <li class="dropdown">
                     <a href="" (click)="toggleDropdown()" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-language"></i> Language
+                        <i class="fa fa-language"></i> {{ 'NAVBAR.LANGUAGE' | translate }}
                     </a>
                     <ul class="dropdown-menu dropdown-danger" [ngClass]="{'open': dropdownFlag}">
-                        <!-- <li>
-                            <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a>
-                        </li>                             -->
                         <li>
-                            <a href="#" style="text-align:center">English</a>
+                            <a (click)="changeLang('en')">{{ 'SIDEBAR.ENGLISH' | translate }}</a>
                         </li>  
                         <li>
-                            <a href="#" style="text-align:center">עברית</a>
+                            <a (click)="changeLang('iw')">{{ 'SIDEBAR.HEBREW' | translate }}</a>
                         </li>  
                     </ul>
-                </li>
-                <!-- <li>
-                    <a href="" class="btn btn-danger btn-fill">Free Download</a>
-                </li> -->
+                </li>                
             </ul>
         </div>
         <!-- /.navbar-collapse -->

@@ -1,29 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { RTLDivDirective } from './rtldiv.directive';
+
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-// app.module.ts
-// import { RTLDivDirective } from './directives/rtl-div.directive';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { RTLDivDirective } from './rtldiv.directive';
-import { DrawerComponent } from './drawer/drawer.component';
-import { DetailComponent } from './detail/detail.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { ContactBtnsComponent } from './contact-btns/contact-btns.component';
 import { ContactComponent } from './contact/contact.component';
-import { LanguageSelectComponent } from './language-select/language-select.component';
 import { GaiaNavbarComponent } from './gaia-navbar/gaia-navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { FlipCardComponent } from './flip-card/flip-card.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -32,22 +23,15 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    SidebarComponent,
     ProjectsComponent,
     AboutComponent,
-    WelcomeComponent,
     RTLDivDirective,
-    DrawerComponent,
-    DetailComponent,
-    NotFoundComponent,
-    ComingSoonComponent,
     ContactBtnsComponent,
     ContactComponent,
-    LanguageSelectComponent,
     GaiaNavbarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    FlipCardComponent
   ],
   imports: [
     BrowserModule,

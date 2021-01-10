@@ -1,4 +1,49 @@
-<div class="page-wrapper parallax filter filter-color-black">
+<div class="section section-page">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image:url('assets/arik-24.jpg')">
+        </div>
+        <div class="content about-content">
+            <div class="title-area">
+                <h1>{{ 'ABOUT.HEADER' | translate | uppercase}}</h1>
+                <div>({{ 'ABOUT.IN_ABOUT' | translate | uppercase}} {{wordCount}} {{ 'ABOUT.WORDS' | translate | uppercase}})</div>
+                <div class="separator line-separator about-separator">♦</div>                
+        </div>
+            <!-- <p>Im Arik!</p> -->
+            <div class="description">
+                <div class="current" rtlDiv>
+                    <div class="icon about-icon">
+                        <i class="pe-7s-target"></i>
+                    </div>
+                    <h5>{{ 'ABOUT.CURRENTLY' | translate | uppercase}}</h5>                    
+                    <p>{{ 'ABOUT.CURRENTLY_CONT' | translate }}</p>
+                    <!-- <div>{{ 'ABOUT.CURRENTLY_CONT' | translate }}</div> -->
+
+                </div>                
+                <div class="likes" rtlDiv>
+                    <div class="icon about-icon">
+                        <i class="pe-7s-star"></i>
+                    </div>
+                    <h5>{{ 'ABOUT.LIKES' | translate | uppercase}}</h5>
+                    <ul rtlDiv>
+                        <li *ngFor="let hobby of hobbies"><p>{{hobby}}</p></li>                    
+                    </ul>
+                </div>
+                <div class="trivia">
+                    <div class="icon about-icon">
+                        <i class="pe-7s-cup"></i>
+                    </div>
+                    <h5>Random Trivia</h5>
+                    <ul>
+                        <li><p>Pokemon</p></li>
+                        <li><p>Mtg</p></li>
+                        <li><p>Pixel art</p></li>
+                    </ul>
+                </div>
+            </div>
+            
+    </div>
+</div>
+<!-- <div class="page-wrapper parallax filter filter-color-black">
     <div class="page-container" rtlDiv>
         <div class="page-inner-container" rtlDiv>
             <div class="about-header">
@@ -6,25 +51,14 @@
                 <div>({{ 'ABOUT.IN_ABOUT' | translate | uppercase}} {{wordCount}} {{ 'ABOUT.WORDS' | translate | uppercase}})
                 </div>
             </div>
-            <div class="content" rtlDiv>
-                <!-- This site was made with angular 9 and flexbox. It is responsive for mobile devices.
-                Source code? 
-                download an electron version of the site? -->
+            <div class="content" rtlDiv>                
                 <div class="intro">
                     <h5>{{ 'ABOUT.INTRO' | translate | uppercase}}</h5>
-                    {{ 'ABOUT.INTRO_NAME' | translate }} {{age}} {{ 'ABOUT.INTRO_CONT' | translate }}
-                    <!-- Programming experience:  -->
-                    <!-- Technical experience -->
+                    {{ 'ABOUT.INTRO_NAME' | translate }} {{age}} {{ 'ABOUT.INTRO_CONT' | translate }}      
 
                 </div>
                 <div class="current">
-                    <h5>{{ 'ABOUT.CURRENTLY' | translate | uppercase}}</h5>
-                    <!-- I've been programming for the past 3 years as a freelancer, at Israeli start-ups, and for software
-                    development companies.
-                    I enjoy helping people, and love the problem-solving and creative aspects of programming.
-                    <br>
-                    I am available to co-operate and develop on interesting projects.
-                    <br> I am particularly interested in applications that will actively improve people's lives, new technologies, and game development. -->
+                    <h5>{{ 'ABOUT.CURRENTLY' | translate | uppercase}}</h5>                    
                     {{ 'ABOUT.CURRENTLY_CONT' | translate }}
                 </div>
                 <div class="likes" rtlDiv>
@@ -36,4 +70,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

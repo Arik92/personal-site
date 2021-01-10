@@ -31,7 +31,7 @@ var no_touch_screen = false;
 var burger_menu;
 var $navbar;
 
-var scroll_distance = 500; // distance from which navbar becomes white from transparent.
+var scroll_distance = 200; // distance from which navbar becomes white from transparent. INITIAL: 500
 
 
 $(function(){
@@ -61,7 +61,7 @@ $(function(){
     }
 
     $navbar = $('.navbar[color-on-scroll]');
-    scroll_distance = $navbar.attr('color-on-scroll') || 500;
+    scroll_distance = $navbar.attr('color-on-scroll') || 200;
 });
 
 //activate collapse right menu when the windows is resized

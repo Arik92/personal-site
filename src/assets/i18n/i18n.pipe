@@ -2,9 +2,8 @@ i18n=> | en | iw
 
 =>NAVBAR
 PERSONAL_NAME | Arik Aviv | אריק אביב
+LANGUAGE | Language | בחירת שפה
 PROJECTS | Projects | פרויקטים
-PIXEL_ART | Pixel Art | יצירות פיקסלים
-GAMES | Games | פיתוח משחקים
 ABOUT | About | אודות
 CONTACT | Contact | צרו קשר
 <=
@@ -52,8 +51,8 @@ FEEL_FREE | Feel free to reach out | ליצירת קשר
 <=
 
 =>SIDEBAR
-HEBREW | He | עברית
-ENGLISH | En | אנגלית
+HEBREW | Hebrew | עברית
+ENGLISH | English | אנגלית
 SELF_NAME | Arik Aviv | אריק אביב
 INTRODUCTION | Hi, glad you could make it! | היי, שמח שבאתם לבקר!
 SELF_DESCRIPTION | My name is Arik and this is my site. Feel free to look around. | אני אריק אביב, וברוכים הבאים לאתר שלי.תרגישו בבית.
