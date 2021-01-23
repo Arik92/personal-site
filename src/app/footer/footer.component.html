@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-2 col-sm-3">
                 <div class="info">
-                    <h5 class="title">Site map</h5>
+                    <h5 class="title">{{ 'FOOTER.MAP' | translate}}</h5>
                     <nav>
                         <ul>
                             <li *ngFor="let item of siteMap;let i=index"> <a routerLink="{{siteMap[i].route}}">{{siteMap[i].title}}</a> </li>                            
@@ -13,7 +13,7 @@
             </div>
             <div class="col-md-3 col-md-offset-1 col-sm-3">
                 <div class="info">
-                    <h5 class="title">Resources</h5>
+                    <h5 class="title">{{ 'FOOTER.RESOURCES' | translate}}</h5>
                      <nav>
                         <ul>
                             <li>
@@ -36,19 +36,19 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-3">
-                <div class="info">
-                    <h5 class="title">Upcoming features</h5>
+                <div class="info" rtlDiv>
+                    <h5 class="title">{{ 'FOOTER.UPCOMING_FEATURES' | translate}}</h5>
                     <nav>
                         <ul>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-lightbulb-o"></i>Beloved <b>Particles</b> from the site's previous version aren't going anywhere.. stay tuned
+                                    <i class="fa fa-lightbulb-o"></i><b>{{ 'FOOTER.UPCOMING_FIRST_TITLE' | translate}}</b>: {{ 'FOOTER.UPCOMING_FIRST_DESC' | translate}}
                                     <hr class="hr-small">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-lightbulb-o"></i> <b> Translations</b>: Hebrew version coming soon
+                                    <i class="fa fa-lightbulb-o"></i> <b>{{ 'FOOTER.UPCOMING_SECOND_TITLE' | translate}}</b>: {{ 'FOOTER.UPCOMING_SECOND_DESC' | translate}}
                                 </a>
                             </li>
                         </ul>
@@ -57,7 +57,7 @@
             </div>
             <div class="col-md-2 col-md-offset-1 col-sm-3">
                 <div class="info">
-                    <h5 class="title">Check me out on</h5>
+                    <h5 class="title">{{ 'FOOTER.CONTACT' | translate}}</h5>
                     <nav>
                         <ul>                            
                             <li>

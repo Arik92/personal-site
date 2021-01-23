@@ -3,32 +3,32 @@
            <div class="card">
                <div class="front">
                    <div class="cover">
-                       <img src="assets/faces/arik-7-min.jpg"/>
+                       <img src="{{project.thumb_url}}"/>
                    </div>
                    <div class="user">
-                       <img class="img-circle" src="assets/faces/face_2.jpg"/>
+                       <!-- <img class="img-circle" src="assets/faces/face_2.jpg"/> -->
                    </div>
                    <div class="content">
-                       <div class="main">
-                           <h3 class="name">John Marvel</h3>
-                           <p class="profession">CEO</p>
-                           <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                       <div class="main" rtlDiv>
+                           <h3 class="name">{{project.title}}</h3>
+                           <p class="profession">{{ 'PROJECT_CARD.STATUS_TITLE' | translate }}: {{project.status}}</p>
+                           <!-- <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p> -->
                        </div>
                        <div class="footer">
-                           <i class="fa fa-mail-forward"></i> Auto Rotation
+                           <i class="fa fa-mail-forward"></i> {{ 'PROJECT_CARD.MORE_DETAILS' | translate }}
                        </div>
                    </div>
                </div> <!-- end front panel -->
                <div class="back">
-                   <div class="header">
-                       <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                   <div class="header" rtlDiv>
+                       <h5 class="motto">{{ 'PROJECT_CARD.TECH' | translate }}: {{project.tech.join(', ')}}</h5>
                    </div>
                    <div class="content">
-                       <div class="main">
-                           <h4 class="text-center">Job Description</h4>
-                           <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+                       <div class="main" style="overflow-y:auto;">
+                           <h4 class="text-center">{{project.title}}</h4>
+                           <p class="text-center">{{project.description}}</p>
 
-                           <div class="stats-container">
+                           <!-- <div class="stats-container">
                                <div class="stats">
                                    <h4>235</h4>
                                    <p>
@@ -47,15 +47,14 @@
                                        Projects
                                    </p>
                                </div>
-                           </div>
+                           </div> -->
 
                        </div>
                    </div>
                    <div class="footer">
-                       <div class="social-links text-center">
-                           <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
-                           <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
-                           <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                       <div class="social-links">
+                           <a *ngIf="project.code_url.localeCompare('')!==0" href="{{project.code_url}}" class="github" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                           <a *ngIf="project.site_url.localeCompare('')!==0" href="{{project.site_url}}" class="hosted" target="_blank"><i class="fa fa-external-link fa-2x"></i></a>
                        </div>
                    </div>
                </div> <!-- end back panel -->

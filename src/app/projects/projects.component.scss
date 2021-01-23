@@ -4,11 +4,25 @@
     position: absolute;
     top: 20%;
     left: 0%;
-    z-index: 3;
-    // display: flex;
-    // flex-flow: row wrap;
-    // align-items: center;
-    // justify-content: space-between;    
+    z-index: 3;        
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      font-size: 75px;      
+    }
+    .ca {
+      position:absolute;
+      height: 450px;
+      width: 100px;
+      z-index: 6;
+    }
+    .left-ca {
+      left: 0;
+    }
+    .right-ca {
+      right: 0;
+    }
 }
 @media only screen and (max-width: 990px) {    
     .project-content {

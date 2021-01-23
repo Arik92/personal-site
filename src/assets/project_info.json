@@ -2,46 +2,55 @@
     "projects": [
         {
             "title": "RunTimez",
-            "status": "DEV",
+            "english_status": "In Development",
+            "hebrew_status": "בפיתוח",
             "english_description": "Originally developed for my running group, after the coach complained he has no easy way of determining time goals for his runners based on their measurements for 5k and 10k runs. That's where I came in. The app simply and elegently determines running times for anyone, and offers to download a csv of them for future reference",
             "hebrew_description": "פותח במקור עבור קבוצת הריצה שלי, כאשר המאמן התלונן בפניי כי אין לו דרך נוחה לגזור זמנים לתחרות עבור המתאמנים שלו על בסיס תוצאות ריצות ה5 ו10 קילומטר שלהם. כאן אני נכנסתי, ובניתי פתרון אלגנטי עבורם שמחשב את תוצאות הזמנים, מציג אותן ומייצא לקובץ CSV ",
-            "tech": ["Angular 7","Node","Express", "CSV"],
+            "tech": ["Angular 7","Node","Express"],
             "code_url":"https://github.com/Arik92/run-times",
             "site_url": "https://run-timez.herokuapp.com",
-            "thumb_url": "assets/project_thumbs/runTimes_thumb.png",
-            "future features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive", "Flutter implementation" ]
+            "thumb_url": "assets/project_thumbs/original/runTimes_thumb.png",
+            "small_thumb_url": "assets/project_thumbs/small/runTimes_thumb_s.png",
+            "future_features": ["login/fb login", "D3 or equivalent measurements", "Mobile responsive", "Flutter implementation" ]
         },          
         {
             "title": "Dev Meeting: i18n",
-            "status": "DONE",
+            "english_status": "Done",
+            "hebrew_status": "הושלם",
             "english_description": "Dev meeting made for spectory devs, where I discuss the concept of app internationalization and localization, and how it can be used to make sites more accessible. The most clear example for this would be this site: The way in which my entire site is translated and behaves differently for english/hebrew texts leverages this method.",
             "hebrew_description": "פגישת מפתחים בספקטורי שבה הצגתי את הקונספט של הנגשת אפליקציות, התרומה שלה עבור המשתמשים ואיך אפשר לממש אותה בangular. הדוגמה הפרקטית הכי טובה לכך היא האתר שאתם נמצאים בו, שעושה שימוש בטכנולוגיה הזו ",
             "tech": ["Angular","i18n","markdown"],
             "code_url":"",
             "site_url": "https://spectory.com/blog/app-internationalization-and-localization-for-angular-apps/",
-            "thumb_url": "assets/project_thumbs/i18n_thumb.png",
-            "future features": []
+            "thumb_url": "assets/project_thumbs/original/i18n_thumb.png",
+            "small_thumb_url": "assets/project_thumbs/small/i18n_thumb_s.png",
+            "future_features": []
         },
         {
             "title": "This Site",
-            "status": "DEV",
+            "english_status": "In Development",
+            "hebrew_status": "בפיתוח",
             "english_description": "Literally the site you are visiting right now. Made with angualr 9, I have built a highly responsive, elegant and accessible website that showcases me and my work. The code in my repository could be configured to suit your needs, let me know if you need help.",
             "hebrew_description": "איך לא, האתר שאתם מנווטים בו עכשיו. בניתי בעזרת angular 9 אתר קל משקל, רספונסיבי, ונגיש שמראה אותי ואת פועלי. ניתן להשתמש בקוד של האתר כדי להתאים לצרכים שלכם, צרו קשר לעוד מידע על איך.",
             "tech": ["angular 9", "i18n"],
             "code_url":"https://github.com/Arik92/Personal-site",
             "site_url": "https://arikaviv.com",
-            "thumb_url": "assets/project_thumbs/arik_thumb.png"
+            "thumb_url": "assets/project_thumbs/original/arik_thumb.png",
+            "small_thumb_url": "assets/project_thumbs/small/arik_thumb_s.png",
+            "future_features":[]
         },
         {
             "title": "Tic Tac Toez",
-            "status": "UNM",
+            "english_status": "Unmaintained",
+            "hebrew_status": "הושלם, לא נתמך כיום",
             "english_description": "A sample app built as an interview for spectory. It is a socket based tic-tac-toe game, featuring real time plays through sockets but limited to 2 players(for now). Game results are then stored in an SQL database to determine high scores in the hall of fame.",
             "hebrew_description": "אפליקציה שנבנתה כחלק מתרגיל בית עבור חברת ספקטורי. מדובר בפלטפורמת איקס עיגול בה המשתמשים משחקים בזמן אמת אחד מול השני, כאשר תוצאת המשחק שלהם נשמרת במסד נתונים מבוסס על SQL כדי לקבוע את השחקנים הטובים ביותר.",
             "tech": ["AngularJS","Node","Express", "Sockets", "postgres SQL"],
             "code_url":"https://github.com/Arik92/ticTacToez",
             "site_url": "https://tic-2-toe.herokuapp.com/",
-            "thumb_url": "assets/project_thumbs/tic_tac_thumb.png",
-            "future features": []
+            "thumb_url": "assets/project_thumbs/original/tic_tac_thumb.png",
+            "small_thumb_url": "assets/project_thumbs/small/tic_tac_thumb_s.png",
+            "future_features": []
         }      
     ]
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { projectItem } from '../content.service';
 
 @Component({
   selector: 'app-flip-card',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flip-card.component.scss']
 })
 export class FlipCardComponent implements OnInit {
+  @Input() project: projectItem;
 
   constructor() { }
 

@@ -142,7 +142,7 @@
     font-size: 18px;
 }
 .card .footer .social-links a{
-    margin: 0 7px;
+    margin: 0 20px;// default: 0 17px
 }
 .card .footer .btn-simple{
     margin-top: -6px;
@@ -154,7 +154,7 @@
 .card .motto{
     width: 100%;
     border-bottom: 1px solid #EEEEEE;
-    color: #999999;
+    color: #777777; // default: #999999
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 10px;
@@ -285,6 +285,13 @@
     color: #555;
 }
 
+/*       Media  queries      */
+@media only screen and (max-width: 770px) {   
+    .card .motto {
+    top: 20px;
+    }   
+}
+/*       Media  queries      */
 
 /*       Fix bug for IE      */
 

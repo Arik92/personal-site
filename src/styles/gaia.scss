@@ -2094,12 +2094,12 @@ a,
 
 .section-get-started,
 .section-header-freebie,
-.section-our-team-freebie {
+.section-featured-projects {
   padding-bottom: 0;
 }
 .section-get-started .container,
 .section-header-freebie .container,
-.section-our-team-freebie .container {
+.section-featured-projects .container {
   position: relative;
   z-index: 100;
   display: block;
@@ -2108,42 +2108,42 @@ a,
 }
 .section-get-started .title-header,
 .section-header-freebie .title-header,
-.section-our-team-freebie .title-header {
+.section-featured-projects .title-header {
   text-transform: none;
 }
 .section-get-started .button-contact,
 .section-header-freebie .button-contact,
-.section-our-team-freebie .button-contact {
+.section-featured-projects .button-contact {
   padding: 25px 0 17px;
 }
 .section-get-started .text-description,
 .section-header-freebie .text-description,
-.section-our-team-freebie .text-description {
+.section-featured-projects .text-description {
   color: #fff;
   margin: 40px auto;
   max-width: 760px;
 }
 .section-get-started .text-white,
 .section-header-freebie .text-white,
-.section-our-team-freebie .text-white {
+.section-featured-projects .text-white {
   color: #fff;
 }
 .section-get-started .text-gold,
 .section-header-freebie .text-gold,
-.section-our-team-freebie .text-gold {
+.section-featured-projects .text-gold {
   color: #c5a47e;
 }
 .section-get-started .parallax,
 .section-get-started .static-image,
 .section-header-freebie .parallax,
 .section-header-freebie .static-image,
-.section-our-team-freebie .parallax,
-.section-our-team-freebie .static-image {
+.section-featured-projects .parallax,
+.section-featured-projects .static-image {
   height: auto;
 }
 .section-get-started .image,
 .section-header-freebie .image,
-.section-our-team-freebie .image {
+.section-featured-projects .image {
   height: 100%;
 }
 
@@ -2213,9 +2213,15 @@ a,
   padding: 0;
 }
 
-.section-our-team-freebie .container {
-  margin-top: 14vh;
+.section-featured-projects .container {
+  margin-top: 37vh; // original dimensions: 14vh
   margin-bottom: 50px;
+  // .team {
+  //   height: 200px;
+  // margin-top: 100px;
+  // margin-bottom: 100px;
+  // }
+  
 }
 
 .card p {

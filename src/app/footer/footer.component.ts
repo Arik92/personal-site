@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { NavigationService, navItem } from '../navigation.service';
+import { ContentService, navItem } from '../content.service';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -9,16 +9,16 @@ export class FooterComponent implements OnInit, OnDestroy {
   siteMap: navItem[] = [];
   
 
-  constructor(private navigation: NavigationService) { }
+  constructor(private content: ContentService) { }
 
   ngOnInit(): void {
-    this.navigation.navPages.subscribe(newPages => {
+    this.content.navPages.subscribe(newPages => {
       this.siteMap = newPages;
     });
   }
 
   ngOnDestroy(){
-    this.navigation.navPages.unsubscribe();
+    this.content.navPages.unsubscribe();
   }
 
 }

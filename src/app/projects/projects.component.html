@@ -1,32 +1,18 @@
-<!-- <div class="page-wrapper parallax filter filter-color-black">
-  <div class="page-container">
-      <div id="app-particles" class="page-inner-container no-scroll"> 
-        <div class="headline"> 
-          <h1>{{ 'PROJECTS.HEADER' | translate | uppercase}}</h1> 
-        </div>
-        <div class="description"> {{ 'PROJECTS.DESCRIPTION' | translate }} </div>
-          <div class="project-list">                             
-              <div class="project-square" *ngFor="let project of projectList">
-                <a class="project-title" [routerLink]="['/detail', project.title]">
-                  <span *ngFor="let titlePart of project.title.split(' ')">{{titlePart}}</span>                
-                  </a>            
-              </div>            
-          </div>
-      </div>      
-  </div>
-</div> -->
 <div class="section section-page">
   <div class="parallax filter filter-color-black">
-      <div class="image" style="background-image:url('assets/office-1.jpeg')">
-      </div>
-      <div class="project-content">
-        <div class="col-sm-10 col-sm-offset-1 container card-container">
-            <app-flip-card></app-flip-card>
-            <app-flip-card></app-flip-card>
-            <app-flip-card></app-flip-card>
-            <!-- <app-flip-card></app-flip-card>
-            <app-flip-card></app-flip-card>
-            <app-flip-card></app-flip-card> -->
+    <div class="image" style="background-image:url('assets/office-1.jpeg')">
+    </div>
+    <div class="project-content">
+      <a  *ngIf="!isFirstPage()" class="left carousel-control ca" (click)="updatePagination(-paginationConst)">
+        <i class="pe-7s-angle-left carousel-arrow left-ca"></i>
+        <span class="sr-only">Prev</span>
+      </a>
+      <div class="col-sm-10 col-sm-offset-1 container card-container">
+          <app-flip-card *ngFor="let project of projectDisplay;let i=index" [project]="project"></app-flip-card>
+      </div>      
+      <a *ngIf="!isLastPage()" class="right carousel-control ca">
+        <i class="pe-7s-angle-right carousel-arrow right-ca" (click)="updatePagination(paginationConst)"></i>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
-</div>

@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { TranslatorService } from '../translator.service';
-import { NavigationService, navItem } from '../navigation.service';
+import { ContentService, navItem } from '../content.service';
 
 @Component({
   selector: 'app-gaia-navbar',
@@ -11,10 +11,10 @@ export class GaiaNavbarComponent implements OnInit, OnDestroy {
   dropdownFlag: boolean = false;
   navPages: navItem[] = [];
 
-  constructor(private translate: TranslatorService, private navigation: NavigationService) { }
+  constructor(private translate: TranslatorService, private content: ContentService) { }
 
   ngOnInit(): void {
-    this.navigation.navPages.subscribe(newPages => {
+    this.content.navPages.subscribe(newPages => {
       this.navPages = newPages;
     });
   }
@@ -38,6 +38,6 @@ export class GaiaNavbarComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.navigation.navPages.unsubscribe();
+    this.content.navPages.unsubscribe();
   }
 }

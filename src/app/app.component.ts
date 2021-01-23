@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslatorService } from './translator.service';
-import { NavigationService } from './navigation.service';
 declare var particlesJS: any;
 
 @Component({
@@ -13,7 +12,7 @@ export class AppComponent implements OnInit {
   currentLanguage: string = 'en';
   isOpen: boolean = false;
 
-  constructor(private translator: TranslatorService, private navigation: NavigationService) {
+  constructor(private translator: TranslatorService) {
     // Optional: get currentLanguage from localstorage
     this.translator.init(this.currentLanguage).then(res => {
       //translate service initiated
