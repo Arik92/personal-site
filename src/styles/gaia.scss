@@ -1251,30 +1251,6 @@ a,
   margin-bottom: 70px;
 }
 
-.section-we-do-presentation {
-  padding: 100px 0;
-}
-
-.section-info-presentation {
-  padding: 0;
-  overflow: hidden;
-}
-.section-info-presentation .info-pricing:first-child {
-  margin-top: 90px;
-}
-.section-info-presentation .image-container {
-  height: 100vh;
-  width: auto;
-  position: relative;
-}
-.section-info-presentation .image-container img {
-  width: auto;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: transparent;
@@ -2262,24 +2238,6 @@ a,
 }
 
 /* END FREEBIE */
-/* PRESENTATION PAGE */
-.section-presentation-page .container {
-  margin-top: 4vh;
-}
-
-.fa-pay {
-  font-size: 30px !important;
-  display: inline-block;
-  margin: 5px 1px 0;
-  width: auto;
-  color: #FFFFFF;
-}
-
-.share-area {
-  margin-top: 80px;
-}
-
-/* END PRESENTATION PAGE */
 @media (min-width: 768px) {
   .nav > .social-links {
     margin-left: 15px;

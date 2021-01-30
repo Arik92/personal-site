@@ -76,7 +76,7 @@
                     <div class="title-area">
                         <h2>{{'HOME.FEATURED_PROJECTS' | translate}}</h2>
                         <div class="separator separator-danger">✻</div>
-                        <p class="description">{{'HOME.FP_DESC' | translate}} &nbsp;<a routerLink="/projects">{{'HOME.FP_LINK' | translate}}</a>
+                        <p class="description">{{'HOME.FP_DESC' | translate}} <a routerLink="/projects">{{'HOME.FP_LINK' | translate}}</a>
                             {{'HOME.FP_CONT' | translate}}</p>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                                     <div  class="card card-member">
                                         <div class="content">
                                             <a href="{{project.site_url}}" target="_blank">
-                                                <img alt="..."  src="{{project.thumb_url}}"/>
+                                                <img alt="..."  src="{{project.small_thumb_url}}"/>
                                             </a>
                                             <!-- <div class="avatar avatar-danger">
                                                 <img alt="..." class="img-circle" src="{{project.small_thumb_url}}"/>

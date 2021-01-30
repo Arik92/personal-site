@@ -1,9 +1,9 @@
 <footer class="footer footer-big footer-color-black" data-color="black">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-3">
+            <div class="col-md-2 col-sm-3" rtlDiv>
                 <div class="info">
-                    <h5 class="title">{{ 'FOOTER.MAP' | translate}}</h5>
+                    <h5 class="title" rtlDiv>{{ 'FOOTER.MAP' | translate}}</h5>
                     <nav>
                         <ul>
                             <li *ngFor="let item of siteMap;let i=index"> <a routerLink="{{siteMap[i].route}}">{{siteMap[i].title}}</a> </li>                            
@@ -11,34 +11,34 @@
                     </nav>
                 </div>
             </div>
-            <div class="col-md-3 col-md-offset-1 col-sm-3">
+            <div class="col-md-3 col-md-offset-1 col-sm-3" rtlDiv>
                 <div class="info">
-                    <h5 class="title">{{ 'FOOTER.RESOURCES' | translate}}</h5>
+                    <h5 class="title" rtlDiv>{{ 'FOOTER.RESOURCES' | translate}}</h5>
                      <nav>
                         <ul>
                             <li>
-                                <a href="#">Finnancial independance</a>
+                                <a href="https://www.hasolidit.com/">{{ 'SITE_RESOURCES.FINANCE' | translate}}</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">MTG</a>
+                            </li> -->
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=w2D4iCzRW7E">{{ 'SITE_RESOURCES.SYNTHWAVE' | translate}}</a>
                             </li>
                             <li>
-                                <a href="#">Synthwave</a>
+                                <a routerLink="home">{{ 'SITE_RESOURCES.SITE' | translate}}</a>
                             </li>
-                            <li>
-                                <a routerLink="home">Best Site in the universe</a>
-                            </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#">Literal Art</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-3">
+            <div class="col-md-3 col-sm-3" rtlDiv>
                 <div class="info" rtlDiv>
-                    <h5 class="title">{{ 'FOOTER.UPCOMING_FEATURES' | translate}}</h5>
-                    <nav>
+                    <h5 class="title" rtlDiv>{{ 'FOOTER.UPCOMING_FEATURES' | translate}}</h5>
+                    <nav rtlDiv>
                         <ul>
                             <li>
                                 <a href="#">
