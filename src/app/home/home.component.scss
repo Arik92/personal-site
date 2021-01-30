@@ -1,0 +1,17 @@
+.title-area {
+    .desc-en {
+        display: block;
+    }
+    .desc-he {
+        display: none;
+    }
+}
+
+.title-area.rtl {
+    .desc-en {
+        display: none;
+    }
+    .desc-he {
+        display: block;
+    }
+}

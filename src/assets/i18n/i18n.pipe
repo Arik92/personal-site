@@ -2,26 +2,12 @@ i18n=> | en | iw
 
 =>NAVBAR
 PERSONAL_NAME | Arik Aviv | אריק אביב
+LANGUAGE | Language | בחירת שפה
 PROJECTS | Projects | פרויקטים
-PIXEL_ART | Pixel Art | יצירות פיקסלים
-GAMES | Games | פיתוח משחקים
 ABOUT | About | אודות
 CONTACT | Contact | צרו קשר
-<=
-
-=>WELCOME
-WELCOME_MESSAGE | Welcome! | ברוכים הבאים!
-EXPLORE | You can start exploring by moving particles with your mouse, by checking out my | יש הרבה מה לראות! אפשר להזיז את החלקיקים שעל המסך בעזרת העכבר, לראות 
-EXPLORE_MOBILE | You can start exploring by moving particles with your fingers, by checking out my | יש הרבה מה לראות! אפשר להזיז את החלקיקים שעל המסך ע"י לחיצה עליהם, לראות 
-PROJECTS | projects | פרוייקטים שעשיתי
-ALTERNATE |or alternatively, find out more | או לחלופין לגלות עוד טיפה על
-ABOUT |about me | מי אני
-<=
-
-=>COMING_SOON
-PREVIEW | Coming soon! | בקרוב! 
-ENGAGE | Looks like you reached a section still in development. But all is not lost, there are still plenty of other sections for you to visit! For example, here are some of | נראה שהגעת לחלק מהאתר שעדיין בפיתוח. אל חשש, יש הרבה מקומות אחרים שאפשר לבקר בהם! בתור התחלה הנה חלק  
-PROJECTS | my projects | מהפרויקטים שלי
+ENGLISH | English | אנגלית
+HEBREW | Hebrew | עברית
 <=
 
 =>ABOUT
@@ -51,24 +37,54 @@ CONTACT_MESSAGE | We might not know each other yet, but it does'nt have to stay 
 FEEL_FREE | Feel free to reach out | ליצירת קשר
 <=
 
-=>SIDEBAR
-HEBREW | He | עברית
-ENGLISH | En | אנגלית
-SELF_NAME | Arik Aviv | אריק אביב
-INTRODUCTION | Hi, glad you could make it! | היי, שמח שבאתם לבקר!
-SELF_DESCRIPTION | My name is Arik and this is my site. Feel free to look around. | אני אריק אביב, וברוכים הבאים לאתר שלי.תרגישו בבית.
-<=
-
 =>PROJECTS
 HEADER | Projects | פרויקטים
 DESCRIPTION | Some of the solo(non-commercial) projects that I have worked on over the years or am currently developing | חלק מהפרויקטים הלא מסחריים שאני עובד עליהם בהווה או שעבדתי עליהם במשך השנים
 <=
 
-=>DETAIL
+=>HOME
+GREETINGS | HI | אהלן
+INTRODUCTION | Im Arik | אני אריק
+INTRODUCTION_CONT | I program stuff. A lot of stuff | ואני מתכנת דברים.
+CHECK | Check It Out | כמו למשל...
+WHO | Who Am I | מי אני
+ABOUT | Years old programmer. What Im About | מפתח תוכנה בן
+ABOUT_HEB_EXT | x | על קצה המזלג
+PROG | Developer | מפתח
+ABOUT_PROG | My vision is to create applications that make people's lives better. Even a little | השאיפה שלי היא לבנות אפליקציות שיעזרו לאנשים ויקלו על חייהם. אפילו טיפה.
+SHAPE | Health & Sports Enthusiest | אורח חיים בריא
+ABOUT_SHAPE | Im about Balance of both body and mind. I enjoy running, weight training and Table Tennis | כשאני לא מפתח תוכנה אני מפתח את הגוף שלי - עם ריצה, אימוני משקולות וטניס שולחן
+MUSIC | Guitarist | גיטריסט
+ABOUT_MUSIC | Life isn't solely about the code. When not typing away at the screen I play my 6 stringed Gibson Explorer. | אוהב להביע את עצמי עם מוזיקה. בזמני הפנוי מנגן רוק ומוזיקת שנות ה80 על הגיבסון שלי
+FEATURED_PROJECTS | Featured Projects | פרויקטים נבחרים
+FP_DESC | Here are some of the projects I have been working on. Click on any one of these to view it or for more details check out the |  הנה חלק מהפרויקטים שעבדתי עליהם, מוזמנים להתרשם. לעוד פרטים כמו טכנולוגיות, דוגמאות קוד ועוד, מוזמנים לעמוד
+FP_LINK | projects | הפרויקטים
+FP_CONT | page | שלי
+<=
+
+=>PROJECT_CARD
 TECH | Technologies used | טכנולוגיות שנעשה בהן שימוש
 STATUS_TITLE | Status | מצב הפרויקט
+MORE_DETAILS | More Details | פרטים נוספים
 STATUS_IN_DEVELOPMENT | Under development | בפיתוח
 STATUS_DONE | Completed | הושלם
 STATUS_DONE_UNMAINTAINED | Completed, unmaintained | הושלם, לא נתמך כיום
 SOURCE_CODE | Project source code | קוד מקור של הפרויקט
+<=
+
+=>FOOTER
+MAP | Site Map | מפת האתר
+RESOURCES | Resources | משאבים
+UPCOMING_FEATURES | Upcoming Features | מאפיינים בתכנון
+UPCOMING_FIRST_TITLE | Particles | חלקיקים
+UPCOMING_FIRST_DESC | Beloved particles from the site's previous version aren't going anywhere.. stay tuned | החלקיקים שכל כך אהבתם מהגרסה הקודמת של האתר יחזרו... צפו להם
+UPCOMING_SECOND_TITLE | Translations | תרגום
+UPCOMING_SECOND_DESC | Hebrew version is now live! try it | הגרסה העברית של האתר הושלמה! אם אתם קוראים את זה היא עובדת
+CONTACT | Contact | צרו קשר
+<=
+
+=> SITE_RESOURCES
+FINANCE | Financial independance | עצמאות כלכלית
+SYNTHWAVE | Synthwave | מוזיקת שנות ה80
+SITE | Best Site In The Universe | האתר הטוב ביקום
 <=

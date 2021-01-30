@@ -1,0 +1,84 @@
+<footer class="footer footer-big footer-color-black" data-color="black">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-3" rtlDiv>
+                <div class="info">
+                    <h5 class="title" rtlDiv>{{ 'FOOTER.MAP' | translate}}</h5>
+                    <nav>
+                        <ul>
+                            <li *ngFor="let item of siteMap;let i=index"> <a routerLink="{{siteMap[i].route}}">{{siteMap[i].title}}</a> </li>                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 col-sm-3" rtlDiv>
+                <div class="info">
+                    <h5 class="title" rtlDiv>{{ 'FOOTER.RESOURCES' | translate}}</h5>
+                     <nav>
+                        <ul>
+                            <li>
+                                <a href="https://www.hasolidit.com/">{{ 'SITE_RESOURCES.FINANCE' | translate}}</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">MTG</a>
+                            </li> -->
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=w2D4iCzRW7E">{{ 'SITE_RESOURCES.SYNTHWAVE' | translate}}</a>
+                            </li>
+                            <li>
+                                <a routerLink="home">{{ 'SITE_RESOURCES.SITE' | translate}}</a>
+                            </li>
+                            <!-- <li>
+                                <a href="#">Literal Art</a>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3" rtlDiv>
+                <div class="info" rtlDiv>
+                    <h5 class="title" rtlDiv>{{ 'FOOTER.UPCOMING_FEATURES' | translate}}</h5>
+                    <nav rtlDiv>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-lightbulb-o"></i><b>{{ 'FOOTER.UPCOMING_FIRST_TITLE' | translate}}</b>: {{ 'FOOTER.UPCOMING_FIRST_DESC' | translate}}
+                                    <hr class="hr-small">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-lightbulb-o"></i> <b>{{ 'FOOTER.UPCOMING_SECOND_TITLE' | translate}}</b>: {{ 'FOOTER.UPCOMING_SECOND_DESC' | translate}}
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-1 col-sm-3">
+                <div class="info">
+                    <h5 class="title">{{ 'FOOTER.CONTACT' | translate}}</h5>
+                    <nav>
+                        <ul>                            
+                            <li>
+                                <a class="btn btn-social btn-reddit btn-simple" href="https://github.com/Arik92" target="_blank" >
+                                    <i class="fa fa-github"></i> Github
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-social btn-reddit btn-simple" href="https://www.linkedin.com/in/arik-aviv/" target="_blank" >
+                                    <i class="fa fa-linkedin"></i> LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-social btn-reddit btn-simple" href="mailto:arik92@gmail.com">
+                                    <i class="fa fa-envelope-o"></i> Email
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>           
+    </div>
+</footer>

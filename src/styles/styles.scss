@@ -1,0 +1,18 @@
+body {
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+
+    svg {
+        fill: #222831;
+    }
+    .rtl {
+        direction: rtl;
+        font-family: 'Varela Round', sans-serif;    }
+        .section-page {
+            padding:0px;
+            height:100vh; // going over 100vh triggers gaia navbar, but creates ugly margin
+        } // consider for styles.js
+}

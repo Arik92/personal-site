@@ -1,30 +1,26 @@
-<div class="page-container">
-    <div class="page-inner-container">
-        <div class="headline">
-            <h1>{{ 'CONTACT.HEADER' | translate | uppercase}}</h1>
-        </div>
-        <div class="content" rtlDiv>
-            <div class="center" rtlDiv>
-                <!-- We might not know each other yet, but it does'nt have to stay that way! For business inquiries, job and development offers, or if you just liked this site and wanna let me know - feel free to get in touch. Im available through email, linkedIn, github, and Morse code. -->
-                {{ 'CONTACT.CONTACT_MESSAGE' | translate }}
+<div class="section section-page">
+    <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image:url('assets/arik-223-min.jpg')">
             </div>
-            <div class="footer">
-                <div class="mobile-msg" rtlDiv>
-                    {{ 'CONTACT.FEEL_FREE' | translate }}
-                    <a href="mailto:arik92@gmail.com"><svg class="down-arrow" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1248 928q0 12-10 24l-319 319q-11 9-23 9t-23-9l-320-320q-15-16-7-35 8-20 30-20h192v-352q0-14 9-23t23-9h192q14 0 23 9t9 23v352h192q14 0 23 9t9 23zm-352-576q-148 0-273 73t-198 198-73 273 73 273 198 198 273 73 273-73 198-198 73-273-73-273-198-198-273-73zm768 544q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></svg></a>
+            <div class="content">
+                <div class="title-area">
+                    <h1>{{ 'CONTACT.HEADER' | translate | uppercase}}</h1>
                 </div>
-                <div class="desktop-msg" rtlDiv>
-                    <svg class ="left-arrow" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1408 960v-128q0-26-19-45t-45-19h-502l189-189q19-19 19-45t-19-45l-91-91q-18-18-45-18t-45 18l-362 362-91 91q-18 18-18 45t18 45l91 91 362 362q18 18 45 18t45-18l91-91q18-18 18-45t-18-45l-189-189h502q26 0 45-19t19-45zm256-64q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></svg>
-                    <svg class ="right-arrow" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1413 896q0-27-18-45l-91-91-362-362q-18-18-45-18t-45 18l-91 91q-18 18-18 45t18 45l189 189h-502q-26 0-45 19t-19 45v128q0 26 19 45t45 19h502l-189 189q-19 19-19 45t19 45l91 91q18 18 45 18t45-18l362-362 91-91q18-18 18-45zm251 0q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"/></svg>
-                    {{ 'CONTACT.FEEL_FREE' | translate }}
-                
+                <div class="message">
+                    {{ 'CONTACT.CONTACT_MESSAGE' | translate }}
+                </div>
+                <div class="contact-options">
+                    <a href="https://github.com/Arik92" target="_blank" >
+                        <i class="fa fa-github"></i> 
+                    </a>
+                    <a href="https://www.linkedin.com/in/arik-aviv/" target="_blank" >
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:arik92@gmail.com">
+                        <i class="fa fa-envelope-o"></i>
+                    </a>
+                    <!-- <i class="pe-7s-more">(just kidding)</i> -->
                 </div>
             </div>            
-        </div>
-        <!-- if on mobile mode, display buttons. Consider appropriate message -->
-        <div class="btns">
-            <app-contact-btns></app-contact-btns>
-        </div>
-
     </div>
 </div>
