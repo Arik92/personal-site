@@ -41,3 +41,9 @@
 .pe-7s-star:before {
     content: "\e611"
 }
+.pe-7s-angle-right:before {
+	content: "\e684";
+}
+.pe-7s-angle-left:before {
+	content: "\e686";
+}
